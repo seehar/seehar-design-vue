@@ -1,0 +1,56 @@
+{
+    "name": "@wei_design/web-vue",
+    "private": false,
+    "version": "1.0.0",
+    "author": "wseehar@qq.com",
+    "description": "Wei Design - A Vue.js 3 UI library",
+    "license": "ISC",
+    "keywords": [
+        "wei_design",
+        "vue",
+        "vue3",
+        "Vue.js 3 UI library",
+        "Wei Design - A Vue.js 3 UI library",
+        "javascript"
+    ],
+    "scripts": {
+        "dev": "vitepress dev . --host --port 5001",
+        "build": "cross-env NODE_ENV=production && vitepress build .",
+        "serve": "cross-env NODE_ENV=production vitepress serve . --port 5001"
+    },
+    "dependencies": {
+        "@wei_design/web-vue": "npm:@wei_design/web-vue@latest",
+        "arraybuffer-loader": "^1.0.8",
+        "axios": "^0.27.2",
+        "clipboard-copy": "^4.0.1",
+        "dayjs": "^1.11.4",
+        "markdown-it": "^13.0.1",
+        "normalize.css": "^8.0.1",
+        "nprogress": "^0.2.0",
+        "prismjs": "^1.28.0",
+        "vue": "^3.2.33"
+    },
+    "devDependencies": {
+        "@types/sass": "^1.43.1",
+        "@vitejs/plugin-vue-jsx": "^2.0.0",
+        "@vue/shared": "^3.2.33",
+        "@vueuse/core": "^9.1.1",
+        "chalk": "^4.1.2",
+        "consola": "^2.15.3",
+        "cross-env": "^7.0.3",
+        "escape-html": "^1.0.3",
+        "fast-glob": "^3.2.11",
+        "markdown-it-container": "^3.0.0",
+        "sass": "^1.51.0",
+        "unocss": "^0.33.5",
+        "unplugin-icons": "^0.14.3",
+        "unplugin-vue-components": "^0.19.5",
+        "unplugin-vue-define-options": "^0.6.1",
+        "vite": "^3.0.9",
+        "vite-plugin-inspect": "^0.6.0",
+        "vite-plugin-meta-env": "^1.0.0",
+        "vite-plugin-mkcert": "^1.6.0",
+        "vite-plugin-pwa": "^0.12.0",
+        "vitepress": "^1.0.0-beta.5"
+    }
+}
