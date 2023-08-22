@@ -110,18 +110,16 @@ touch config.js
 
 toDo: 这部分可添加脚本，根据组件自动生成 sidebar
 
-添加`/zh-CN`是为了后期做多语言提供口子
-
 -   sidebar：左侧菜单
 
 ```javascript
 const sidebar = {
-    '/zh-CN/guide/': [
+    '/guide/': [
         {
             text: '基础',
             children: [
-                { text: '安装', link: '/zh-CN/guide/installation' },
-                { text: '快速开始', link: '/zh-CN/guide/quickstart' }
+                { text: '安装', link: '/guide/installation' },
+                { text: '快速开始', link: '/guide/quickstart' }
             ]
         },
         {
@@ -129,19 +127,19 @@ const sidebar = {
             children: [
                 {
                     text: '主题',
-                    link: '/zh-CN/guide/theming'
+                    link: '/guide/theming'
                 },
                 {
                     text: '更新日志',
-                    link: '/zh-CN/guide/changelog'
+                    link: '/guide/changelog'
                 }
             ]
         }
     ],
-    '/zh-CN/component/': [
+    '/component/': [
         {
             text: '基础组件',
-            children: [{ link: '/zh-CN/component/button', text: 'Button' }]
+            children: [{ link: '/component/button', text: 'Button' }]
         }
     ]
 }
@@ -153,17 +151,17 @@ const sidebar = {
 const nav = [
     {
         text: '指南',
-        link: '/zh-CN/guide/design',
+        link: '/guide/design',
         activeMatch: '/guide/'
     },
     {
         text: '组件',
-        link: '/zh-CN/component/button',
+        link: '/component/button',
         activeMatch: '/component/'
     },
     {
         text: '资源',
-        link: '/zh-CN/resource/index',
+        link: '/resource/index',
         activeMatch: '/resource/'
     }
 ]

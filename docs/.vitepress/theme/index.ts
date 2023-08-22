@@ -25,10 +25,10 @@ console.log(
 )
 
 export default {
-    ...DefaultTheme, // 默认主题
-    enhanceApp: ({ app }: any) => {
+    extends: DefaultTheme, // 默认主题
+    enhanceApp(ctx) {
         // 注册全局组件
-        app.use(WeDesign)
-        app.component('Demo', VPDemo)
+        ctx.app.use(WeDesign)
+        ctx.app.component('demo', VPDemo)
     }
 }

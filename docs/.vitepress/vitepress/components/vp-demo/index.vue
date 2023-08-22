@@ -52,6 +52,7 @@ const copyRawSource = async () => {
     }
 }
 </script>
+
 <style lang="scss" scoped>
 .vp-demo {
     margin: 0 0 16px;

@@ -11,7 +11,7 @@ hero:
     actions:
         - theme: brand
           text: 快速上手 →
-          link: /zh-CN/guide/installation
+          link: /guide/installation
         - theme: alt
           text: GitHub
           link: https://github.com/wei-design/web-vue

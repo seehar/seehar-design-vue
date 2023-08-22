@@ -23,7 +23,7 @@ export const head: HeadConfig[] = [
     ['meta', { rel: 'referrer', href: `same-origin` }],
     ['meta', { name: 'keywords', content: `@wei_design/web-vue,A Vue.js 3 UI library,vue,vue3` }],
     ['meta', { name: 'description', content: `wei_design|@wei_design/web-vue|A Vue.js 3 UI library|vue|vue3` }],
-    ['meta', { name: 'author', content: `魏国,seehar,wseehar,wei_design` }],
+    ['meta', { name: 'author', content: `seehar` }],
     ['meta', { name: 'baidu-site-verification', content: `code-bakUos2v8l` }],
     [
         'script',

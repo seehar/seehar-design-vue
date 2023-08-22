@@ -3,7 +3,7 @@
  * @Date: 2022/7/2 17:47
  * @Description: 侧边栏配置
  */
-import { ensureLang, lang } from '../utils/lang'
+import { lang } from '../utils/lang'
 import guideLocale from '../i18n/pages/guide.json'
 import componentLocale from '../i18n/pages/component.json'
 
@@ -25,8 +25,8 @@ function getComponentsSideBar() {
 // this might create duplicated data but the overhead is ignorable
 const getSidebar = () => {
     return {
-        '/zh-CN/guide/': getGuideSidebar(),
-        '/zh-CN/component/': getComponentsSideBar()
+        '/guide/': getGuideSidebar(),
+        '/component/': getComponentsSideBar()
     }
 }
 
@@ -39,7 +39,7 @@ function mapPrefix(item: Item, lang: string, prefix = ''): Item {
     }
     return {
         ...item,
-        link: `${ensureLang(lang)}${prefix}${item.link}`
+        link: `${prefix}${item.link}`
     }
 }
 

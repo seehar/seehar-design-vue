@@ -1,4 +1,4 @@
-import path, { resolve } from 'path'
+import path from 'path'
 import fs from 'fs'
 // @ts-ignore
 import MarkdownIt from 'markdown-it'
@@ -48,14 +48,14 @@ export const mdPlugin = (md: MarkdownIt) => {
                 }
                 if (!source) throw new Error(`Incorrect source file: ${sourceFile}`)
                 // opening tag
-                return `<Demo
+                return `<demo
                         source="${encodeURIComponent(highlight(source, 'js'))}"
                         path="${sourceFile}"
                         raw-source="${encodeURIComponent(source)}"
                         description="${encodeURIComponent(localMd.render(description))}">`
             } else {
                 // closing tag
-                return '</Demo>\n'
+                return '</demo>\n'
             }
         }
     } as ContainerOpts)

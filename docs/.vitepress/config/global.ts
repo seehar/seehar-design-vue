@@ -18,7 +18,7 @@ export const docRoot = resolve(projRoot, docsDirName)
 export const vpRoot = resolve(docRoot, '.vitepress')
 
 // 仓库分支
-export const REPO_BRANCH = 'master'
+export const REPO_BRANCH = 'main'
 
 // 仓库地址
-export const REPO_PATH = 'wei-design/web-vue'
+export const REPO_PATH = 'seehar/seehar-design-vue'
