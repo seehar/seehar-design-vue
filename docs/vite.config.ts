@@ -17,7 +17,7 @@ const alias: Alias[] = [
         replacement: `${resolve(__dirname, './.vitepress/vitepress')}/`
     },
     {
-        find: /^wei_design(\/(es|lib))?$/,
+        find: /^seehar_design_vue(\/(es|lib))?$/,
         replacement: `${resolve(__dirname, '../packages/index.ts')}/`
     }
 ]
