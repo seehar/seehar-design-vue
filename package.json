@@ -1,21 +1,21 @@
 {
-    "name": "seehar-vue-ui",
+    "name": "seehar-design-vue",
     "private": false,
     "packageManager": "pnpm@7.6.0",
     "version": "1.0.0",
     "author": "seehar@qq.com",
-    "description": "Seehar Design - A Vue.js 3 UI library, @seehar/web-vue",
+    "description": "Seehar Design Vue - A Vue.js 3 UI library, @seehar/web-vue",
     "license": "ISC",
     "keywords": [
-        "@wei_design/web-vue",
-        "wei_design",
-        "wei design",
+        "@seehar/seehar-design-vue",
+        "seehar design vue",
+        "seehar",
         "vue",
         "vue3",
         "vite",
         "vite3",
         "Vue.js 3 UI library",
-        "Wei Design - A Vue.js 3 UI library",
+        "Seehar Design Vue - A Vue.js 3 UI library",
         "javascript"
     ],
     "scripts": {

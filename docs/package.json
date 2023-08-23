@@ -1,16 +1,16 @@
 {
-    "name": "@wei_design/web-vue",
+    "name": "@seehar/seehar-design-vue",
     "private": false,
     "version": "1.0.0",
-    "author": "wseehar@qq.com",
+    "author": "seehar@qq.com",
     "description": "Wei Design - A Vue.js 3 UI library",
     "license": "ISC",
     "keywords": [
-        "wei_design",
+        "seehar",
         "vue",
         "vue3",
         "Vue.js 3 UI library",
-        "Wei Design - A Vue.js 3 UI library",
+        "Seehar Design Vue - A Vue.js 3 UI library",
         "javascript"
     ],
     "scripts": {
@@ -24,6 +24,7 @@
         "axios": "^0.27.2",
         "clipboard-copy": "^4.0.1",
         "dayjs": "^1.11.4",
+        "less": "^4.2.0",
         "markdown-it": "^13.0.1",
         "normalize.css": "^8.0.1",
         "nprogress": "^0.2.0",
@@ -32,7 +33,7 @@
     },
     "devDependencies": {
         "@algolia/client-search": "^4.19.1",
-        "@types/sass": "^1.43.1",
+        "@unocss/core": "^0.55.2",
         "@vitejs/plugin-vue-jsx": "^3.0.2",
         "@vue/shared": "^3.2.33",
         "@vueuse/core": "^9.1.1",
@@ -44,7 +45,6 @@
         "fast-glob": "^3.2.11",
         "markdown-it-container": "^3.0.0",
         "postcss": "8.4.27",
-        "sass": "^1.51.0",
         "search-insights": "^2.7.0",
         "tailwindcss": "3.3.3",
         "unocss": "^0.55.2",

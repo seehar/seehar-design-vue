@@ -9,7 +9,7 @@ export const head: HeadConfig[] = [
         'link',
         {
             rel: 'icon',
-            href: 'https://wei-design.github.io/web-vue/images/logo-link.png',
+            href: 'https://seehar.github.io/seehar-design-vue/images/logo.png',
             type: 'image'
         }
     ],
@@ -21,8 +21,8 @@ export const head: HeadConfig[] = [
         }
     ],
     ['meta', { rel: 'referrer', href: `same-origin` }],
-    ['meta', { name: 'keywords', content: `@wei_design/web-vue,A Vue.js 3 UI library,vue,vue3` }],
-    ['meta', { name: 'description', content: `wei_design|@wei_design/web-vue|A Vue.js 3 UI library|vue|vue3` }],
+    ['meta', { name: 'keywords', content: `@seehar/seehar-design-vue,A Vue.js 3 UI library,vue,vue3` }],
+    ['meta', { name: 'description', content: `seehar|@seehar/seehar-design-vue|A Vue.js 3 UI library|vue|vue3` }],
     ['meta', { name: 'author', content: `seehar` }],
     ['meta', { name: 'baidu-site-verification', content: `code-bakUos2v8l` }],
     [

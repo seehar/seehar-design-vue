@@ -1,10 +1,10 @@
 <template>
     <div class="bg-blue-950 h-screen">
-        <h2>wei_design</h2>
+        <h2>Seehar Design Vue</h2>
         <hr style="margin: 32px 100px" />
-        <img src="/favicon.png" alt="wei_design" title="wei_design" />
+        <img src="/favicon.png" alt="seehar_design_vue" title="seehar_design_vue" />
         <div>
-            <WeButton :loading="true">按钮组件</WeButton>
+            <ShButton :loading="true">按钮组件</ShButton>
         </div>
         <div class="text-primary">文字</div>
     </div>

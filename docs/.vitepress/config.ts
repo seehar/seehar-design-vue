@@ -27,8 +27,8 @@ export const config: UserConfig = {
         },
         siteTitle: 'Wei Design',
         lastUpdated: 'Last Updated',
-        logo: '/images/logo-link.png',
-        logoSmall: '/images/logo-link.png',
+        logo: '/images/logo.png',
+        logoSmall: '/images/logo.png',
         sidebar, // 没有s
         nav,
         socialLinks: [{ icon: 'github', link: 'https://github.com/seehar/' }],

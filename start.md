@@ -1,6 +1,6 @@
 话不多说，先看成品 👇
 
-# @wei_design/web-vue
+# @seehar/seehar-design-vue
 
 [A Vue.js 3 UI library](https://wei-design.github.io/web-vue/)
 
@@ -136,7 +136,7 @@ npm run dev
 import { createApp } from 'vue'
 import App from './App.vue'
 // 完整引入组件库
-import WeDesign from '@wei_design/web-vue'
+import WeDesign from '@seehar/seehar-design-vue'
 
 const app = createApp(App)
 // 全局安装
@@ -146,7 +146,7 @@ app.use(WeDesign).mount('#app')
 组件当中
 
 ```vue
-<WeButton :loading="true">按钮组件</WeButton>
+<ShButton :loading="true">按钮组件</ShButton>
 ```
 
 #### 2、按需引入
@@ -157,7 +157,7 @@ app.use(WeDesign).mount('#app')
 import { createApp } from 'vue'
 import App from './App.vue'
 // 按需引入
-import { Button } from '@wei_design/web-vue'
+import { Button } from '@seehar/seehar-design-vue'
 
 const app = createApp(App)
 
@@ -167,7 +167,7 @@ app.use(Button).mount('#app')
 组件当中
 
 ```vue
-<WeButton :loading="true">按钮组件</WeButton>
+<ShButton :loading="true">按钮组件</ShButton>
 ```
 
 要做一个组件库，就得提供这两种引入方式
@@ -176,10 +176,10 @@ app.use(Button).mount('#app')
 
 #### 1、组件开发
 
-需要先来添加下 sass 编译器
+需要先来添加下 less 编译器
 
 ```bash
-pnpm install sass
+pnpm install less
 ```
 
 添加`packages/components`文件夹，或`mkdir packages/components`，这里用来存放组件库的源码添加`button`文件夹，也就是第一个
@@ -189,12 +189,12 @@ pnpm install sass
 
 ```
 ├── src                         	 # 组件源码
-│   ├── index.scss                 # 样式
+│   ├── index.less                 # 样式
 │   ├── index.vue                  # 组件
 │── index.ts                       # 组件库导出
 ```
 
-`index.scss`中添加样式
+`index.less`中添加样式
 
 ```css
 @import '../../../theme/color.variables';
@@ -427,13 +427,13 @@ build: {
 
 ```json
 {
-    "name": "@wei_design/web-vue", // 包名，可以直接是包名，也可以@wei_design[组织]/web-vue[包名]
+    "name": "@seehar/seehar-design-vue", // 包名，可以直接是包名，也可以@seehar[组织]/seehar-design-vue[包名]
     "private": false, // 是否私有包，发布公共的需要设置false
     "version": "1.0.0", // 版本，每次发布都需要修改
-    "author": "wseehar@qq.com",
-    "description": "Wei Design - A Vue.js 3 UI library, @wei_design/web-vue", // 包的简述
+    "author": "seehar@qq.com",
+    "description": "Wei Design - A Vue.js 3 UI library, @seehar/seehar-design-vue", // 包的简述
     "keywords": [
-        "@wei_design/web-vue" // 关键词
+        "@seehar/seehar-design-vue" // 关键词
     ],
     "homepage": "https://wei-design.github.io/web-vue/",
     "repository": {
@@ -486,7 +486,7 @@ npm publish --access public
 import { createApp } from 'vue';
 import App from './App.vue';
 // 完整引入组件库
-import WeDesign from '@wei_design/web-vue';
+import WeDesign from '@seehar/seehar-design-vue';
 
 const app = createApp(App);
 // 全局安装
@@ -499,8 +499,8 @@ app.use(WeDesign).mount('#app');
 
 ### 1、unpkg
 
-[资源浏览](https://unpkg.com/@wei_design/web-vue/)
-[https://unpkg.com/@wei_design/web-vue/](https://unpkg.com/@wei_design/web-vue/)
+[资源浏览](https://unpkg.com/@seehar/seehar-design-vue/)
+[https://unpkg.com/@seehar/seehar-design-vue/](https://unpkg.com/@wei_design/web-vue/)
 
 ```html
 <link rel="stylesheet" href="//unpkg.com/@wei_design/web-vue/lib/style.css" />

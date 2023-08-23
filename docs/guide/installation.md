@@ -18,7 +18,7 @@ node：>=16.0.0
 这里推荐`pnpm`进行安装
 
 ```bash
-pnpm install @wei_design/web-vue --save
+pnpm install @seehar/seehar-design-vue --save
 ```
 
 ## cdn
@@ -28,8 +28,8 @@ pnpm install @wei_design/web-vue --save
 [资源浏览](https://unpkg.com/@wei_design/web-vue/)
 
 ```html
-<link rel="stylesheet" href="//unpkg.com/@wei_design/web-vue/lib/style.css" />
-<script src="//unpkg.com/@wei_design/web-vue"></script>
+<link rel="stylesheet" href="//unpkg.com/@seehar/seehar-design-vue/lib/style.css" />
+<script src="//unpkg.com/@seehar/seehar-design-vue"></script>
 ```
 
 ### jsdelivr
@@ -37,6 +37,6 @@ pnpm install @wei_design/web-vue --save
 [资源浏览](https://cdn.jsdelivr.net/npm/@wei_design/web-vue/)
 
 ```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@wei_design/web-vue/lib/style.css" />
-<script src="//cdn.jsdelivr.net/npm/@wei_design/web-vue"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@seehar/seehar-design-vue/lib/style.css" />
+<script src="//cdn.jsdelivr.net/npm/@seehar/seehar-design-vue"></script>
 ```

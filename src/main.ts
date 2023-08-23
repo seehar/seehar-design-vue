@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 // 完整引入组件库
-import WeDesign from 'wei_design' // 本地开发
+import SeeharDesignVue from 'seehar-design-vue' // 本地开发
 
 import './assets/css/tailwind.css'
 const app = createApp(App)
@@ -20,4 +20,4 @@ console.log(
     'padding: 1px 5px 1px 1px; border-radius: 0 3px 3px 0; color: #fff; background: #1475b2'
 )
 
-app.use(WeDesign).mount('#app')
+app.use(SeeharDesignVue).mount('#app')

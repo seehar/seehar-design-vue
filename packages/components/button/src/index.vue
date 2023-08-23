@@ -31,7 +31,7 @@ const Props = {
 }
 
 export default defineComponent({
-    name: 'WeButton',
+    name: 'ShButton',
     props: Props,
     setup(props) {
         const classString = classNames([
@@ -45,5 +45,3 @@ export default defineComponent({
     }
 })
 </script>
-
-<style lang="scss"></style>

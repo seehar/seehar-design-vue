@@ -18,10 +18,10 @@ const decoded = computed(() => {
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .example-source {
-    .language-vue {
-        margin: 0;
-    }
+  .language-vue {
+    margin: 0;
+  }
 }
 </style>

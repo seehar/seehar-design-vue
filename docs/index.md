@@ -2,11 +2,11 @@
 layout: home
 editLink: false
 
-title: Web Vue
+title: Seehar Design Vue
 titleTemplate: A Vue 3 UI Framework
 
 hero:
-    name: Web Vue
+    name: Seehar Design Vue
     tagline: A Vue 3 UI Framework
     actions:
         - theme: brand
@@ -14,7 +14,7 @@ hero:
           link: /guide/installation
         - theme: alt
           text: GitHub
-          link: https://github.com/wei-design/web-vue
+          link: https://github.com/seehar/seehar-design-vue
 
 features:
     - title: 📦 Vite

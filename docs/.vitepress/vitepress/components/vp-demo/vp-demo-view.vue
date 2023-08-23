@@ -34,57 +34,60 @@ onBeforeMount(() => {
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 // loading动画
 @keyframes lds-ripple {
-    0% {
-        top: 18px;
-        left: 18px;
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-    4.9% {
-        top: 18px;
-        left: 18px;
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-    5% {
-        top: 18px;
-        left: 18px;
-        width: 0;
-        height: 0;
-        opacity: 1;
-    }
-    100% {
-        top: 0px;
-        left: 0px;
-        width: 36px;
-        height: 36px;
-        opacity: 0;
-    }
+  0% {
+    top: 18px;
+    left: 18px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 18px;
+    left: 18px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 18px;
+    left: 18px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+  }
 }
-.example-component {
-    min-height: 86px;
-    padding: 1.5rem;
-    &--spin {
-        width: 36px;
-        height: 36px;
-        display: inline-block;
-        position: relative;
-        > div {
-            position: absolute;
-            border: 4px solid var(--theme-light);
-            opacity: 1;
-            border-radius: 50%;
-            animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-        }
 
-        div:nth-child(2) {
-            animation-delay: -0.5s;
-        }
+.example-component {
+  min-height: 86px;
+  padding: 1.5rem;
+
+  &--spin {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    position: relative;
+
+    > div {
+      position: absolute;
+      border: 4px solid var(--theme-light);
+      opacity: 1;
+      border-radius: 50%;
+      animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+
+      &:nth-child(2) {
+        animation-delay: -0.5s;
+      }
     }
+  }
 }
 </style>

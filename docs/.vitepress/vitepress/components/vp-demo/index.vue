@@ -53,43 +53,49 @@ const copyRawSource = async () => {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .vp-demo {
-    margin: 0 0 16px;
-    overflow: hidden;
-    &__desc {
-        font-size: 14px;
-        color: var(--text-color);
-    }
-    &__panel {
-        margin: 16px 0;
-        border: 1px solid var(--border-color);
-        background-color: var(--bg-color);
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    &__control {
-        height: 44px;
-        box-sizing: border-box;
-        padding: 0 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        border-top: 1px solid var(--border-color);
-        background-color: var(--bg-color);
+  margin: 0 0 16px;
+  overflow: hidden;
 
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-        margin-top: -1px;
-        &-btn {
-            font-size: 14px;
-            margin-left: 10px;
-            cursor: pointer;
-            color: #5e6d82;
-            &:hover {
-                color: var(--color-primary);
-            }
-        }
+  &__desc {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+
+  &__panel {
+    margin: 16px 0;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__control {
+    height: 44px;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-top: -1px;
+
+    &-btn {
+      font-size: 14px;
+      margin-left: 10px;
+      cursor: pointer;
+      color: #5e6d82;
+
+      &:hover {
+        color: var(--color-primary);
+      }
     }
+  }
 }
+
 </style>
