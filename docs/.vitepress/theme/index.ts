@@ -4,9 +4,10 @@
  * @Description: 主题配置
  */
 import DefaultTheme from 'vitepress/theme'
-// import WeDesign from 'wei_design' // 本地开发
-import WeDesign from '@wei_design/web-vue'
-import '@wei_design/web-vue/lib/style.css'
+// import SeeharDesignVue from '../../../packages/index' // 本地开发
+import SeeharDesignVue from 'seehar-design-vue'
+import 'seehar-design-vue/lib/style.css'
+// import "../vitepress/style/tailwind.css"
 
 import { VPDemo } from '../vitepress'
 
@@ -28,7 +29,7 @@ export default {
     extends: DefaultTheme, // 默认主题
     enhanceApp(ctx) {
         // 注册全局组件
-        ctx.app.use(WeDesign)
+        ctx.app.use(SeeharDesignVue)
         ctx.app.component('demo', VPDemo)
     }
 }

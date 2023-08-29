@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, getCurrentInstance, ref } from 'vue'
+import { computed } from 'vue'
 import { useClipboard, useToggle } from '@vueuse/core'
 
 import VpDemoView from './vp-demo-view.vue'
@@ -92,7 +92,7 @@ const copyRawSource = async () => {
       color: #5e6d82;
 
       &:hover {
-        color: var(--color-primary);
+        @apply hover:text-primary;
       }
     }
   }

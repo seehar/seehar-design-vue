@@ -1,6 +1,6 @@
 <template>
-    <div class="button-basic">
-        <we-button @click="handleClick">点击</we-button>
+    <div>
+        <sh-button @click="handleClick">点击</sh-button>
     </div>
 </template>
 

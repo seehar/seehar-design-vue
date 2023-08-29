@@ -6,6 +6,10 @@
                 {
                     "link": "/button",
                     "text": "Button"
+                },
+                {
+                    "link": "/card",
+                    "text": "Card"
                 }
             ]
         },

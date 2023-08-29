@@ -19,7 +19,7 @@
         "serve": "cross-env NODE_ENV=production vitepress serve . --port 5001"
     },
     "dependencies": {
-        "@wei_design/web-vue": "npm:@wei_design/web-vue@latest",
+        "seehar-design-vue": "npm:seehar-design-vue@latest",
         "arraybuffer-loader": "^1.0.8",
         "axios": "^0.27.2",
         "clipboard-copy": "^4.0.1",

@@ -6,7 +6,6 @@ specifiers:
   '@vitejs/plugin-vue-jsx': ^3.0.2
   '@vue/shared': ^3.2.33
   '@vueuse/core': ^9.1.1
-  '@wei_design/web-vue': npm:@wei_design/web-vue@latest
   arraybuffer-loader: ^1.0.8
   autoprefixer: 10.4.14
   axios: ^0.27.2
@@ -25,6 +24,7 @@ specifiers:
   postcss: 8.4.27
   prismjs: ^1.28.0
   search-insights: ^2.7.0
+  seehar-design-vue: npm:seehar-design-vue@latest
   tailwindcss: 3.3.3
   unocss: ^0.55.2
   unplugin-vue-components: ^0.25.1
@@ -37,7 +37,6 @@ specifiers:
   vue: ^3.2.33
 
 dependencies:
-  '@wei_design/web-vue': 1.0.0_vue@3.2.37
   arraybuffer-loader: 1.0.8
   axios: 0.27.2
   clipboard-copy: 4.0.1
@@ -47,6 +46,7 @@ dependencies:
   normalize.css: 8.0.1
   nprogress: 0.2.0
   prismjs: 1.28.0
+  seehar-design-vue: 0.0.1_vue@3.2.37
   vue: 3.2.37
 
 devDependencies:
@@ -1556,16 +1556,6 @@ packages:
       - vue
     dev: true
 
-  /@wei_design/web-vue/1.0.0_vue@3.2.37:
-    resolution: {integrity: sha512-/AOmf5bg1B/N944xmgrwJnGmg8LfWMBvJgk+Ekv2cJZyqAGcPmfwho6+rHp5N1gx2a7Rdfj7zBzFtCmfd3LqyQ==}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      vue: ^3.2.33
-    dependencies:
-      dayjs: 1.11.5
-      vue: 3.2.37
-    dev: false
-
   /acorn/8.10.0:
     resolution: {integrity: sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==}
     engines: {node: '>=0.4.0'}
@@ -3004,6 +2994,16 @@ packages:
     resolution: {integrity: sha512-GLbVaGgzYEKMvuJbHRhLi1qoBFnjXZGZ6l4LxOYPCp4lI2jDRB3jPU9/XNhMwv6kvnA9slTreq6pvK+b3o3aqg==}
     engines: {node: '>=8.16.0'}
     dev: true
+
+  /seehar-design-vue/0.0.1_vue@3.2.37:
+    resolution: {integrity: sha512-bp2MpEj5kjhX2RIvfad7is/WYVi5Ng9yVm8dK2saS+N8WzH74FrWI3E78vUB77SjjNZWjKGVuGlMPJJ4hm0TNQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      vue: ^3.2.33
+    dependencies:
+      dayjs: 1.11.5
+      vue: 3.2.37
+    dev: false
 
   /semver/5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}

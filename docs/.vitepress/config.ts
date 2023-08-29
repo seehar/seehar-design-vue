@@ -17,7 +17,7 @@ export const config: UserConfig = {
     head,
     lang: '',
     base: env === 'production' ? '/seehar-design-vue/' : '/',
-    title: 'Web Vue',
+    title: 'Seehar Design Vue',
     description: 'A Vue 3 UI Framework',
     lastUpdated: true,
     themeConfig: {
@@ -25,8 +25,8 @@ export const config: UserConfig = {
             // 编辑此页
             pattern: `https://github.com/${REPO_PATH}/edit/${REPO_BRANCH}/docs/:path`
         },
-        siteTitle: 'Wei Design',
-        lastUpdated: 'Last Updated',
+        siteTitle: 'Seehar Design Vue',
+        lastUpdated: '最后更新时间',
         logo: '/images/logo.png',
         logoSmall: '/images/logo.png',
         sidebar, // 没有s
@@ -37,7 +37,7 @@ export const config: UserConfig = {
         // },
         footer: {
             message: 'Released under the MIT License.',
-            copyright: `<a target="_blank" href="https://github.com/seehar" style="color: #047857">Copyright &copy; 2023 - ${new Date().getFullYear()} &nbsp;seehar</a>`
+            copyright: `<a target="_blank" href="https://github.com/seehar" class="bg-primary">Copyright &copy; 2023 - ${new Date().getFullYear()} &nbsp;seehar</a>`
         },
     },
     markdown: {

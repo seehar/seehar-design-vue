@@ -1,4 +1,4 @@
-# @seehar/seehar-design-vue
+# seehar-design-vue
 
 A Vue.js 3 UI library
 

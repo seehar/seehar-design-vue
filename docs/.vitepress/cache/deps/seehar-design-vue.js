@@ -7,23 +7,23 @@ import {
   renderSlot
 } from "./chunk-7X7VTB6Z.js";
 
-// node_modules/.pnpm/@wei_design+web-vue@1.0.0_vue@3.2.37/node_modules/@wei_design/web-vue/lib/web-vue.mjs
+// node_modules/.pnpm/registry.npmjs.org+seehar-design-vue@0.0.1_vue@3.2.37/node_modules/seehar-design-vue/lib/web-vue.mjs
 var m = Array.isArray;
-var b = (t) => typeof t == "string";
-var y = (t) => t !== null && typeof t == "object";
-function a(...t) {
+var y = (t) => typeof t == "string";
+var b = (t) => t !== null && typeof t == "object";
+function l(...t) {
   const n = [];
   for (let o = 0; o < t.length; o++) {
     const e = t[o];
     if (!!e) {
-      if (b(e))
+      if (y(e))
         n.push(e);
       else if (m(e))
         for (let s = 0; s < e.length; s++) {
-          const l = a(e[s]);
-          l && n.push(l);
+          const a = l(e[s]);
+          a && n.push(a);
         }
-      else if (y(e))
+      else if (b(e))
         for (const s in e)
           e[s] && n.push(s);
     }
@@ -53,7 +53,7 @@ var _ = defineComponent({
   props: g,
   setup(t) {
     return {
-      classString: a([
+      classString: l([
         "we-button",
         `we-button-type-${t.type}`,
         t.disabled ? "we-button-disabled" : ""
@@ -68,18 +68,18 @@ var h = (t, n) => {
   return o;
 };
 var S = ["disabled"];
-var $ = { class: "we-button-inner" };
-function B(t, n, o, e, s, l) {
+var B = { class: "bg-primary" };
+function $(t, n, o, e, s, a) {
   return openBlock(), createElementBlock("button", {
     class: normalizeClass([t.classString]),
     disabled: t.disabled || t.loading
   }, [
-    createBaseVNode("span", $, [
+    createBaseVNode("span", B, [
       renderSlot(t.$slots, "default")
     ])
   ], 10, S);
 }
-var i = h(_, [["render", B]]);
+var i = h(_, [["render", $]]);
 i.install = function(t) {
   return t.component(i.name, i), t;
 };
@@ -96,4 +96,4 @@ export {
   i as Button,
   A as default
 };
-//# sourceMappingURL=@wei_design_web-vue.js.map
+//# sourceMappingURL=seehar-design-vue.js.map

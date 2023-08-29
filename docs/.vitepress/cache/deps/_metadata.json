@@ -1,29 +1,35 @@
 {
-  "hash": "5503edd1",
-  "browserHash": "8420d418",
+  "hash": "90530c22",
+  "browserHash": "4bbcd7a0",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/.pnpm/vue@3.2.37/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "42648d92",
+      "fileHash": "e40dbefc",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "b372fbc5",
+      "fileHash": "865ea392",
       "needsInterop": false
     },
     "@wei_design/web-vue": {
-      "src": "../../../node_modules/.pnpm/@wei_design+web-vue@1.0.0_vue@3.2.37/node_modules/@wei_design/web-vue/lib/web-vue.mjs",
+      "src": "../../../node_modules/.pnpm/registry.npmjs.org+@wei_design+web-vue@1.0.0_vue@3.2.37/node_modules/@wei_design/web-vue/lib/web-vue.mjs",
       "file": "@wei_design_web-vue.js",
-      "fileHash": "e7fdc493",
+      "fileHash": "095759ed",
       "needsInterop": false
     },
     "@vueuse/core": {
       "src": "../../../node_modules/.pnpm/@vueuse+core@9.1.1_vue@3.2.37/node_modules/@vueuse/core/index.mjs",
       "file": "@vueuse_core.js",
-      "fileHash": "124cb255",
+      "fileHash": "ad48feb9",
+      "needsInterop": false
+    },
+    "seehar-design-vue": {
+      "src": "../../../node_modules/.pnpm/registry.npmjs.org+seehar-design-vue@0.0.1_vue@3.2.37/node_modules/seehar-design-vue/lib/web-vue.mjs",
+      "file": "seehar-design-vue.js",
+      "fileHash": "bab3e9ba",
       "needsInterop": false
     }
   },
