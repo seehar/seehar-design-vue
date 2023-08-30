@@ -37,7 +37,7 @@ export const config: UserConfig = {
         // },
         footer: {
             message: 'Released under the MIT License.',
-            copyright: `<a target="_blank" href="https://github.com/seehar" class="bg-primary">Copyright &copy; 2023 - ${new Date().getFullYear()} &nbsp;seehar</a>`
+            copyright: `<a target="_blank" href="https://github.com/seehar" class="text-primary">Copyright &copy; 2023 - ${new Date().getFullYear()} &nbsp;seehar</a>`
         },
     },
     markdown: {

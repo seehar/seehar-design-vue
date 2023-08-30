@@ -1,47 +1,15 @@
 <template>
-    <button :class="[classString]" :disabled="disabled || loading">
-        <span class="bg-primary">
-            <slot></slot>
-        </span>
+    <button
+        class="px-4 py-1 rounded cursor-pointer text-sm border border-gray-800/20 active:border-primary/70 focus:border-primary/70 dark:border-white/30 bg-white/0 dark:text-white/80 hover:bg-primary/5 hover:border-primary/60 hover:text-primary dark:hover:bg-primary/5 dark:hover:border-primary/60 dark:hover:text-primary"
+    >
+        <slot />
     </button>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
-import classNames from '../../../utils/className'
-// import './index.scss'
-
-const Props = {
-    type: {
-        type: String as PropType<string>, // 转为ts类型string
-        default: 'default'
-    },
-    size: {
-        type: String as PropType<string>,
-        default: 'md'
-    },
-    disabled: {
-        type: Boolean as PropType<boolean>,
-        default: false
-    },
-    loading: {
-        type: Boolean as PropType<boolean>,
-        default: false
-    }
-}
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-    name: 'ShButton',
-    props: Props,
-    setup(props) {
-        const classString = classNames([
-            'we-button',
-            `we-button-type-${props.type}`,
-            props.disabled ? 'we-button-disabled' : ''
-        ])
-        return {
-            classString
-        }
-    }
+    name: 'ShButton'
 })
 </script>

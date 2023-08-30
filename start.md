@@ -1,12 +1,12 @@
 话不多说，先看成品 👇
 
-# @seehar/seehar-design-vue
+# seehar-design-vue
 
-[A Vue.js 3 UI library](https://wei-design.github.io/web-vue/)
+[A Vue.js 3 UI library](https://seehar.github.io/seehar-design-vue/)
 
 ![](https://img.shields.io/badge/%E6%96%87%E6%A1%A3%E5%BA%93-vitepress-brightgreen.svg#crop=0&crop=0&crop=1&crop=1&id=tXEY6&originHeight=20&originWidth=102&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://img.shields.io/npm/v/@wei_design/web-vue.svg#crop=0&crop=0&crop=1&crop=1&id=b1XRO&originHeight=20&originWidth=80&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://img.shields.io/github/stars/wei-design/web-vue#crop=0&crop=0&crop=1&crop=1&id=o8sRG&originHeight=20&originWidth=54&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://img.shields.io/npm/v/@seehar-design-vue.svg#crop=0&crop=0&crop=1&crop=1&id=b1XRO&originHeight=20&originWidth=80&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://img.shields.io/github/stars/seehar-design-vue#crop=0&crop=0&crop=1&crop=1&id=o8sRG&originHeight=20&originWidth=54&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ## 技术栈
 

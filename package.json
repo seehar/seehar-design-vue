@@ -2,12 +2,12 @@
     "name": "seehar-design-vue",
     "private": false,
     "packageManager": "pnpm@7.6.0",
-    "version": "1.0.0",
+    "version": "0.0.2",
     "author": "seehar@qq.com",
-    "description": "Seehar Design Vue - A Vue.js 3 UI library, @seehar/web-vue",
+    "description": "Seehar Design Vue - A Vue.js 3 UI library",
     "license": "ISC",
     "keywords": [
-        "@seehar/seehar-design-vue",
+        "seehar-design-vue",
         "seehar design vue",
         "seehar",
         "vue",
@@ -38,10 +38,10 @@
         "release:minor": "npm run release -- --release-as minor",
         "release:patch": "npm run release -- --release-as patch"
     },
-    "homepage": "https://wei-design.github.io/web-vue/",
+    "homepage": "https://seehar.github.io/eehar-design-vue/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/wei-design/web-vue.git"
+        "url": "https://github.com/seehar/eehar-design-vue.git"
     },
     "files": [
         "lib/*",
@@ -49,12 +49,12 @@
         "Readme.md",
         "package.json"
     ],
-    "main": "./lib/web-vue.umd.js",
-    "module": "./lib/web-vue.mjs",
+    "main": "./lib/seehar-design-vue.umd.js",
+    "module": "./lib/seehar-design-vue.mjs",
     "exports": {
         ".": {
-            "import": "./lib/web-vue.mjs",
-            "require": "./lib/web-vue.umd.js"
+            "import": "./lib/eehar-design-vue.mjs",
+            "require": "./lib/eehar-design-vue.umd.js"
         },
         "./lib/style.css": "./lib/style.css"
     },
@@ -73,6 +73,7 @@
         "@typescript-eslint/parser": "^5.27.0",
         "@vitejs/plugin-vue": "^3.0.3",
         "@vitejs/plugin-vue-jsx": "^2.0.0",
+        "@vueuse/core": "^10.4.1",
         "autoprefixer": "^10.4.14",
         "chalk": "^4.1.2",
         "commitizen": "^4.2.4",
@@ -92,11 +93,12 @@
         "standard-version": "^9.5.0",
         "tailwindcss": "^3.3.3",
         "typescript": "^4.7.2",
+        "unplugin-auto-import": "^0.16.6",
         "vite": "^3.0.9",
         "vite-plugin-dts": "^1.2.0",
         "vite-plugin-md": "^0.15.0",
         "vite-plugin-meta-env": "^1.0.0",
-        "vue": "^3.2.33",
+        "vue": "^3.3.4",
         "vue-tsc": "^0.40.1"
     },
     "config": {

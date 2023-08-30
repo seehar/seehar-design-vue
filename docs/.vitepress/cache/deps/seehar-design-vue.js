@@ -1,99 +1,55 @@
 import {
-  createBaseVNode,
   createElementBlock,
   defineComponent,
-  normalizeClass,
   openBlock,
   renderSlot
 } from "./chunk-7X7VTB6Z.js";
 
-// node_modules/.pnpm/registry.npmjs.org+seehar-design-vue@0.0.1_vue@3.2.37/node_modules/seehar-design-vue/lib/web-vue.mjs
-var m = Array.isArray;
-var y = (t) => typeof t == "string";
-var b = (t) => t !== null && typeof t == "object";
-function l(...t) {
-  const n = [];
-  for (let o = 0; o < t.length; o++) {
-    const e = t[o];
-    if (!!e) {
-      if (y(e))
-        n.push(e);
-      else if (m(e))
-        for (let s = 0; s < e.length; s++) {
-          const a = l(e[s]);
-          a && n.push(a);
-        }
-      else if (b(e))
-        for (const s in e)
-          e[s] && n.push(s);
-    }
-  }
-  return n.join(" ");
-}
-var g = {
-  type: {
-    type: String,
-    default: "default"
-  },
-  size: {
-    type: String,
-    default: "md"
-  },
-  disabled: {
-    type: Boolean,
-    default: false
-  },
-  loading: {
-    type: Boolean,
-    default: false
-  }
-};
-var _ = defineComponent({
-  name: "WeButton",
-  props: g,
-  setup(t) {
-    return {
-      classString: l([
-        "we-button",
-        `we-button-type-${t.type}`,
-        t.disabled ? "we-button-disabled" : ""
-      ])
-    };
-  }
+// node_modules/.pnpm/registry.npmjs.org+seehar-design-vue@0.0.2_vue@3.2.37/node_modules/seehar-design-vue/lib/web-vue.mjs
+var f = defineComponent({
+  name: "ShButton"
 });
-var h = (t, n) => {
+var l = (t, n) => {
   const o = t.__vccOpts || t;
-  for (const [e, s] of n)
-    o[e] = s;
+  for (const [s, c] of n)
+    o[s] = c;
   return o;
 };
-var S = ["disabled"];
-var B = { class: "bg-primary" };
-function $(t, n, o, e, s, a) {
-  return openBlock(), createElementBlock("button", {
-    class: normalizeClass([t.classString]),
-    disabled: t.disabled || t.loading
-  }, [
-    createBaseVNode("span", B, [
-      renderSlot(t.$slots, "default")
-    ])
-  ], 10, S);
+var _ = { class: "bg-primary px-2 py-1 rounded text-white border-0 cursor-pointer hover:opacity-90 shadow" };
+function m(t, n, o, s, c, p) {
+  return openBlock(), createElementBlock("button", _, [
+    renderSlot(t.$slots, "default")
+  ]);
 }
-var i = h(_, [["render", $]]);
-i.install = function(t) {
-  return t.component(i.name, i), t;
+var e = l(f, [["render", m]]);
+e.install = function(t) {
+  return t.component(e.name, e), t;
 };
-var w = [i];
-var j = function(t) {
-  w.forEach((n) => {
+var $ = defineComponent({
+  name: "ShCard"
+});
+var h = { class: "rounded border p-3 bg-gradient-to-tr from-white to-blue-600" };
+function b(t, n, o, s, c, p) {
+  return openBlock(), createElementBlock("div", h, [
+    renderSlot(t.$slots, "default")
+  ]);
+}
+var r = l($, [["render", b]]);
+r.install = function(t) {
+  return t.component(r.name, r), t;
+};
+var x = [e, r];
+var g = function(t) {
+  x.forEach((n) => {
     t.use(n);
   });
 };
-var A = {
-  install: j
+var w = {
+  install: g
 };
 export {
-  i as Button,
-  A as default
+  e as Button,
+  r as Card,
+  w as default
 };
 //# sourceMappingURL=seehar-design-vue.js.map

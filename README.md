@@ -1,9 +1,9 @@
-# @wei_design/web-vue
+# Seehar Design Vue
 
 A Vue.js 3 UI library
 
 [![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
-[![Wei Design](https://img.shields.io/npm/v/@wei_design/web-vue.svg?style=flat-square)](https://www.npmjs.org/package/@wei_design/web-vue)
+[![Wei Design](https://img.shields.io/npm/v/seehar-design-vue.svg?style=flat-square)](https://www.npmjs.org/package/seehar-design-vue)
 
 ---
 
@@ -11,7 +11,7 @@ A Vue.js 3 UI library
 -   💪 [Vue3](https://vuejs.org)
 -   🔥 TypeScript
 
-[快速开始](https://wei-design.github.io/web-vue/)
+[快速开始](https://seehar.github.io/seehar-design-vue/)
 
 ## 安装
 
@@ -22,27 +22,27 @@ node：>=16.0.0
 这里推荐`pnpm`进行安装
 
 ```sh
-pnpm install @seehar/seehar-design-vue --save
+pnpm install seehar-design-vue --save
 ```
 
 ### cdn
 
 #### unpkg
 
-[资源浏览](https://unpkg.com/@seehar/seehar-design-vue/)
+[资源浏览](https://unpkg.com/seehar-design-vue/)
 
 ```html
-<link rel="stylesheet" href="//unpkg.com/@seehar/seehar-design-vue/lib/style.css" />
-<script src="//unpkg.com/@seehar/seehar-design-vue"></script>
+<link rel="stylesheet" href="//unpkg.com/seehar-design-vue/lib/style.css" />
+<script src="//unpkg.com/seehar-design-vue"></script>
 ```
 
 #### jsdelivr
 
-[资源浏览](https://cdn.jsdelivr.net/npm/@seehar/seehar-design-vue/)
+[资源浏览](https://cdn.jsdelivr.net/npm/seehar-design-vue/)
 
 ```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@seehar/seehar-design-vue/lib/style.css" />
-<script src="//cdn.jsdelivr.net/npm/@seehar/seehar-design-vue"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/seehar-design-vue/lib/style.css" />
+<script src="//cdn.jsdelivr.net/npm/seehar-design-vue"></script>
 ```
 
 ## 使用
@@ -55,7 +55,7 @@ pnpm install @seehar/seehar-design-vue --save
 import { createApp } from 'vue'
 import App from './App.vue'
 // 完整引入组件库
-import SeeharDesignVue from '@seehar/seehar-design-vue'
+import SeeharDesignVue from 'seehar-design-vue'
 
 const app = createApp(App)
 // 全局安装
@@ -76,7 +76,7 @@ app.use(SeeharDesignVue).mount('#app')
 import { createApp } from 'vue'
 import App from './App.vue'
 // 按需引入
-import { Button } from '@seehar/seehar-design-vue'
+import { Button } from 'seehar-design-vue'
 
 const app = createApp(App)
 

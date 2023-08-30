@@ -1,10 +1,10 @@
 import { App } from 'vue'
 
-import Button from './src/index.vue'
-Button.install = function (app: App) {
+import Card from './src/index.vue'
+Card.install = function (app: App) {
     // 组件注册，按需引入
-    app.component(Button.name, Button)
+    app.component(Card.name, Card)
     return app
 }
 
-export default Button
+export default Card

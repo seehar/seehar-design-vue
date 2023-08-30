@@ -12,6 +12,7 @@ import Markdown from 'vite-plugin-md' // vue中使用md
 import dts from 'vite-plugin-dts'
 import dayjs from 'dayjs'
 import VitePluginMetaEnv from 'vite-plugin-meta-env'
+import AutoImport from 'unplugin-auto-import/vite'
 
 const { name: title, version: APP_VERSION } = require('./package.json')
 
@@ -49,8 +50,8 @@ export default () => {
             outDir: 'lib',
             lib: {
                 entry: resolve(__dirname, './packages/index.ts'),
-                name: 'WebVue',
-                fileName: 'web-vue'
+                name: 'SeeharDesignVue',
+                fileName: 'seehar-design-vue'
             },
             rollupOptions: {
                 // 确保外部化处理那些你不想打包进库的依赖
@@ -70,7 +71,15 @@ export default () => {
             dts(),
             // 环境变量
             VitePluginMetaEnv(metaEnv, 'import.meta.env'),
-            VitePluginMetaEnv(metaEnv, 'process.env')
+            VitePluginMetaEnv(metaEnv, 'process.env'),
+            AutoImport({
+                // 自动导入 Vue 相关函数，如：ref, reactive, toRef 等
+                imports: ['vue'],
+                eslintrc: {
+                    enabled: true
+                },
+                dts: resolve(resolve(__dirname, 'packages'), 'auto-imports.d.ts')
+            })
         ]
     })
 }
