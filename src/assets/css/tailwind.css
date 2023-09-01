@@ -2,3 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+    --theme-primary: #ca8b4a;
+    --theme-secondary: #bb12f5;
+}

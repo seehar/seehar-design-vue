@@ -2,7 +2,7 @@
     "name": "seehar-design-vue",
     "private": false,
     "packageManager": "pnpm@7.6.0",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": "seehar@qq.com",
     "description": "Seehar Design Vue - A Vue.js 3 UI library",
     "license": "ISC",
@@ -53,8 +53,8 @@
     "module": "./lib/seehar-design-vue.mjs",
     "exports": {
         ".": {
-            "import": "./lib/eehar-design-vue.mjs",
-            "require": "./lib/eehar-design-vue.umd.js"
+            "import": "./lib/seehar-design-vue.mjs",
+            "require": "./lib/seehar-design-vue.umd.js"
         },
         "./lib/style.css": "./lib/style.css"
     },

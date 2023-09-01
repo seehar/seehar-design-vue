@@ -24,7 +24,7 @@ specifiers:
   postcss: 8.4.27
   prismjs: ^1.28.0
   search-insights: ^2.7.0
-  seehar-design-vue: 0.0.2
+  seehar-design-vue: ^0.0.3
   tailwindcss: 3.3.3
   unocss: ^0.55.2
   unplugin-vue-components: ^0.25.1
@@ -63,7 +63,7 @@ devDependencies:
   markdown-it-container: 3.0.0
   postcss: 8.4.27
   search-insights: 2.7.0
-  seehar-design-vue: registry.npmjs.org/seehar-design-vue/0.0.2_vue@3.2.37
+  seehar-design-vue: registry.npmjs.org/seehar-design-vue/0.0.3_vue@3.2.37
   tailwindcss: 3.3.3
   unocss: 0.55.2_postcss@8.4.27+vite@4.4.9
   unplugin-vue-components: 0.25.1_vue@3.2.37
@@ -3605,11 +3605,11 @@ packages:
       - supports-color
     optional: true
 
-  registry.npmjs.org/seehar-design-vue/0.0.2_vue@3.2.37:
-    resolution: {integrity: sha512-sAHWrSYwRMAnjzXH9kvcd5STaSMmpMieH0bfIYPAPHNOR5zlEyvgh49dp5jHGqZcFsoByDidSQplqJ72xBerUA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/seehar-design-vue/-/seehar-design-vue-0.0.2.tgz}
-    id: registry.npmjs.org/seehar-design-vue/0.0.2
+  registry.npmjs.org/seehar-design-vue/0.0.3_vue@3.2.37:
+    resolution: {integrity: sha512-tc+0AQeGD2iayKuIwAvwYYsNIKpWBk9bFVPdad0YnxlLQJJDfRwKNiI78e41OPIEDPHW9OAo5/auAwf9i+kW3g==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/seehar-design-vue/-/seehar-design-vue-0.0.3.tgz}
+    id: registry.npmjs.org/seehar-design-vue/0.0.3
     name: seehar-design-vue
-    version: 0.0.2
+    version: 0.0.3
     engines: {node: '>=16.0.0'}
     peerDependencies:
       vue: ^3.2.33

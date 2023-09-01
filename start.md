@@ -431,14 +431,14 @@ build: {
     "private": false, // 是否私有包，发布公共的需要设置false
     "version": "1.0.0", // 版本，每次发布都需要修改
     "author": "seehar@qq.com",
-    "description": "Wei Design - A Vue.js 3 UI library, @seehar/seehar-design-vue", // 包的简述
+    "description": "Seehar Design Design - A Vue.js 3 UI library, seehar-design-vue", // 包的简述
     "keywords": [
         "@seehar/seehar-design-vue" // 关键词
     ],
-    "homepage": "https://wei-design.github.io/web-vue/",
+    "homepage": "https://seehar.github.io/seehar-design-vue/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/wei-design/web-vue.git"
+        "url": "https://github.com/seehar/seehar-desgin-vue.git"
     },
     // 主要上传哪些文件或者文件夹到npm
     "files": ["lib/*", "packages/*", "Readme.md", "package.json"],

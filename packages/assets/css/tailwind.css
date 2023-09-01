@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --theme-primary: #409EFF;
+    --theme-secondary: #9815f8;
+}

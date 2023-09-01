@@ -11,6 +11,7 @@
             <div class="bg-gradient-to-r from-primary">333</div>
         </div>
         <div class="text-primary">文字</div>
+        <div class="text-secondary">文字</div>
     </div>
 </template>
 
