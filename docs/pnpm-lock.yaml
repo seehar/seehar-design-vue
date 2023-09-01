@@ -24,7 +24,7 @@ specifiers:
   postcss: 8.4.27
   prismjs: ^1.28.0
   search-insights: ^2.7.0
-  seehar-design-vue: ^0.0.3
+  seehar-design-vue: npm:seehar-design-vue@latest
   tailwindcss: 3.3.3
   unocss: ^0.55.2
   unplugin-vue-components: ^0.25.1
@@ -46,6 +46,7 @@ dependencies:
   normalize.css: 8.0.1
   nprogress: 0.2.0
   prismjs: 1.28.0
+  seehar-design-vue: registry.npmjs.org/seehar-design-vue/0.0.4_vue@3.2.37
   vue: 3.2.37
 
 devDependencies:
@@ -63,7 +64,6 @@ devDependencies:
   markdown-it-container: 3.0.0
   postcss: 8.4.27
   search-insights: 2.7.0
-  seehar-design-vue: registry.npmjs.org/seehar-design-vue/0.0.3_vue@3.2.37
   tailwindcss: 3.3.3
   unocss: 0.55.2_postcss@8.4.27+vite@4.4.9
   unplugin-vue-components: 0.25.1_vue@3.2.37
@@ -3533,7 +3533,7 @@ packages:
     resolution: {integrity: sha512-CAdX5Q3YW3Gclyo5Vpqkgpj8fSdLQcRuzfX6mC6Phy0nfJ0eGYOeS7m4mt2plDWLAtA4TqTakvbboHvUxfe4iA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/dayjs/-/dayjs-1.11.5.tgz}
     name: dayjs
     version: 1.11.5
-    dev: true
+    dev: false
 
   registry.npmjs.org/errno/0.1.8:
     resolution: {integrity: sha512-dJ6oBr5SQ1VSd9qkk7ByRgb/1SH4JZjCHSW/mr63/QcXO9zLVxvJ6Oy13nio03rxpSnVDDjFor75SjVeZWPW/A==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/errno/-/errno-0.1.8.tgz}
@@ -3605,18 +3605,18 @@ packages:
       - supports-color
     optional: true
 
-  registry.npmjs.org/seehar-design-vue/0.0.3_vue@3.2.37:
-    resolution: {integrity: sha512-tc+0AQeGD2iayKuIwAvwYYsNIKpWBk9bFVPdad0YnxlLQJJDfRwKNiI78e41OPIEDPHW9OAo5/auAwf9i+kW3g==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/seehar-design-vue/-/seehar-design-vue-0.0.3.tgz}
-    id: registry.npmjs.org/seehar-design-vue/0.0.3
+  registry.npmjs.org/seehar-design-vue/0.0.4_vue@3.2.37:
+    resolution: {integrity: sha512-nbcS+v6pIwYUY+zmCYNoxzkwKT46YmAeJ9NeFQtfon4wioSZH/6gVOGOglwnPqY6vpbUT/xZnY59Koy1A4XTIQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/seehar-design-vue/-/seehar-design-vue-0.0.4.tgz}
+    id: registry.npmjs.org/seehar-design-vue/0.0.4
     name: seehar-design-vue
-    version: 0.0.3
+    version: 0.0.4
     engines: {node: '>=16.0.0'}
     peerDependencies:
       vue: ^3.2.33
     dependencies:
       dayjs: registry.npmjs.org/dayjs/1.11.5
       vue: 3.2.37
-    dev: true
+    dev: false
 
   registry.npmjs.org/source-map/0.6.1:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz}

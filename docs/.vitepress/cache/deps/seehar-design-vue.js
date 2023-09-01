@@ -6,7 +6,7 @@ import {
   renderSlot
 } from "./chunk-7X7VTB6Z.js";
 
-// node_modules/.pnpm/registry.npmjs.org+seehar-design-vue@0.0.3_vue@3.2.37/node_modules/seehar-design-vue/lib/seehar-design-vue.mjs
+// node_modules/.pnpm/registry.npmjs.org+seehar-design-vue@0.0.4_vue@3.2.37/node_modules/seehar-design-vue/lib/seehar-design-vue.mjs
 var m = defineComponent({
   name: "ShButton"
 });
