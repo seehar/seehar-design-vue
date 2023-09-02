@@ -1,29 +1,29 @@
 {
-  "hash": "0e8072ed",
-  "browserHash": "b864d706",
+  "hash": "38d1ae01",
+  "browserHash": "e20dbc1c",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/.pnpm/vue@3.2.37/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "b13c501e",
+      "fileHash": "5f8f7018",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "e2ee5483",
+      "fileHash": "1103b316",
       "needsInterop": false
     },
     "seehar-design-vue": {
-      "src": "../../../node_modules/.pnpm/registry.npmjs.org+seehar-design-vue@0.0.4_vue@3.2.37/node_modules/seehar-design-vue/lib/seehar-design-vue.mjs",
+      "src": "../../../node_modules/.pnpm/registry.npmjs.org+seehar-design-vue@0.0.6_vue@3.2.37/node_modules/seehar-design-vue/lib/seehar-design-vue.mjs",
       "file": "seehar-design-vue.js",
-      "fileHash": "b30e2a23",
+      "fileHash": "7320250d",
       "needsInterop": false
     },
     "@vueuse/core": {
       "src": "../../../node_modules/.pnpm/@vueuse+core@9.1.1_vue@3.2.37/node_modules/@vueuse/core/index.mjs",
       "file": "@vueuse_core.js",
-      "fileHash": "7df41c34",
+      "fileHash": "151fbc84",
       "needsInterop": false
     }
   },
