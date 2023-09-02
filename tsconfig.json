@@ -11,17 +11,10 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "lib": [
-      "esnext",
-      "dom"
-    ],
+    "lib": ["esnext", "dom"],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "seehar-design-vue": [
-        "./packages/index.ts"
-      ]
+      "@/*": ["./src/*"],
+      "seehar-design-vue": ["./packages/index.ts"]
     }
   },
   "include": [
@@ -31,7 +24,7 @@
     "src/**/*.vue",
     "packages/**/*.ts",
     "packages/**/*.d.ts",
-    "packages/**/*.vue",
+    "packages/**/*.vue"
   ],
   "references": [
     {

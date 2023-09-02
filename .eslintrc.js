@@ -26,5 +26,5 @@ module.exports = {
     // '@vue/eslint-config-prettier/skip-formatting',
     'plugin:@typescript-eslint/recommended', // typescript-eslint推荐规则,
     'plugin:prettier/recommended'
-  ],
+  ]
 }

@@ -30,7 +30,7 @@
     "clean:modules": "rimraf node_modules",
     "prepare": "husky install",
     "lint": "eslint --ext .vue,.js,.jsx,.ts,.tsx  --ignore-path .gitignore --fix packages",
-    "format": "prettier .  --write",
+    "format": "prettier . --write",
     "release": "standard-version",
     "release:alpha": "standard-version --prerelease alpha",
     "release:rc": "standard-version --prerelease rc",

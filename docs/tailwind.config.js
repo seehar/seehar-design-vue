@@ -6,7 +6,11 @@
  */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './docs/**/*.{vue,js,ts,jsx,tsx}', './examples/**/*.{vue,js,ts,jsx,tsx}'],
+  content: [
+    './index.html',
+    './docs/**/*.{vue,js,ts,jsx,tsx}',
+    './examples/**/*.{vue,js,ts,jsx,tsx}'
+  ],
   // corePlugins: {
   //   preflight: false,
   // },

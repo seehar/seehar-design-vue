@@ -4,7 +4,7 @@
     <a class="cursor-pointer" @click="toggleDark()">{{ isDark }}</a>
     <hr style="margin: 32px 100px" />
 
-    <img alt="seehar_design_vue" src="/favicon.png" title="seehar_design_vue"/>
+    <img alt="seehar_design_vue" src="/favicon.png" title="seehar_design_vue" />
 
     <div class="space-x-2">
       <h1 class="dark:text-white/80">按钮</h1>

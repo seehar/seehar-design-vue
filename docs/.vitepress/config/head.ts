@@ -22,7 +22,10 @@ export const head: HeadConfig[] = [
   ],
   ['meta', { rel: 'referrer', href: `same-origin` }],
   ['meta', { name: 'keywords', content: `seehar-design-vue,A Vue.js 3 UI library,vue,vue3` }],
-  ['meta', { name: 'description', content: `seehar|seehar-design-vue|A Vue.js 3 UI library|vue|vue3` }],
+  [
+    'meta',
+    { name: 'description', content: `seehar|seehar-design-vue|A Vue.js 3 UI library|vue|vue3` }
+  ],
   ['meta', { name: 'author', content: `seehar` }],
   ['meta', { name: 'baidu-site-verification', content: `code-bakUos2v8l` }],
   [

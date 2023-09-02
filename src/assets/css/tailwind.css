@@ -3,6 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-    --theme-primary: #ca8b4a;
-    --theme-secondary: #bb12f5;
+  --theme-primary: #ca8b4a;
+  --theme-secondary: #bb12f5;
 }

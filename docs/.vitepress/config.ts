@@ -42,7 +42,7 @@ export const config: UserConfig = {
   },
   markdown: {
     lineNumbers: true,
-    config: md => mdPlugin(md)
+    config: (md) => mdPlugin(md)
   }
 }
 export default config

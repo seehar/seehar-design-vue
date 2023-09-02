@@ -10,6 +10,6 @@
   "compilerOptions": {
     "composite": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   }
 }

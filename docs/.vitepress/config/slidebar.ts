@@ -18,7 +18,9 @@ function getGuideSidebar() {
 }
 
 function getComponentsSideBar() {
-  return Object.values(componentLocale[lang]).map((item: Item) => mapPrefix(item, lang, '/component'))
+  return Object.values(componentLocale[lang]).map((item: Item) =>
+    mapPrefix(item, lang, '/component')
+  )
 }
 
 // return sidebar with language configs.
@@ -34,7 +36,7 @@ function mapPrefix(item: Item, lang: string, prefix = ''): Item {
   if (item.items && item.items.length > 0) {
     return {
       ...item,
-      items: item.items.map(child => mapPrefix(child, lang, prefix))
+      items: item.items.map((child) => mapPrefix(child, lang, prefix))
     }
   }
   return {
