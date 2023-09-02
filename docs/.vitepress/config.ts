@@ -16,7 +16,7 @@ const env = process.env.NODE_ENV
 export const config: UserConfig = {
   head,
   lang: '',
-  base: env === 'production' ? '/seehar-design-vue/' : '/',
+  base: env === 'production' ? '/seehar-design-vue' : '',
   title: 'Seehar Design Vue',
   description: 'A Vue 3 UI Framework',
   lastUpdated: true,
@@ -31,7 +31,7 @@ export const config: UserConfig = {
     logoSmall: '/images/logo.png',
     sidebar, // 没有s
     nav,
-    socialLinks: [{ icon: 'github', link: 'https://github.com/seehar/' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/seehar' }],
     // search: {
     //     provider: 'local'
     // },
