@@ -1,9 +1,9 @@
 /**
  * 导出所有组件
  */
-import Button from './components/button'
-import Card from './components/card'
+import ButtonPlugin from './components/button/index'
+import CardPlugin from './components/card'
 
-export default [Button, Card]
+export default [ButtonPlugin, CardPlugin]
 
-export { Button, Card }
+export { ButtonPlugin, CardPlugin }

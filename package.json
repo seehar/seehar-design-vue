@@ -3,7 +3,7 @@
     "private": false,
     "packageManager": "pnpm@7.6.0",
     "version": "0.0.4",
-    "author": "seehar@qq.com",
+    "author": "seehar",
     "description": "Seehar Design Vue - A Vue.js 3 UI library",
     "license": "ISC",
     "keywords": [
@@ -46,7 +46,7 @@
     "files": [
         "lib/*",
         "packages/*",
-        "Readme.md",
+        "README.md",
         "package.json"
     ],
     "main": "./lib/seehar-design-vue.umd.js",
@@ -94,7 +94,7 @@
         "tailwindcss": "^3.3.3",
         "typescript": "^4.7.2",
         "unplugin-auto-import": "^0.16.6",
-        "vite": "^3.0.9",
+        "vite": "^4.1.4",
         "vite-plugin-dts": "^1.2.0",
         "vite-plugin-md": "^0.15.0",
         "vite-plugin-meta-env": "^1.0.0",

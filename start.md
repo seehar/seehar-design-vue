@@ -197,8 +197,6 @@ pnpm install less
 `index.less`中添加样式
 
 ```css
-@import '../../../theme/color.variables';
-
 button {
     outline: none;
 }

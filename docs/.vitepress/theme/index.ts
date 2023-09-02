@@ -4,8 +4,8 @@
  * @Description: 主题配置
  */
 import DefaultTheme from 'vitepress/theme'
-// import SeeharDesignVue from '../../../packages/index' // 本地开发
-import SeeharDesignVue from 'seehar-design-vue'
+// import SeeharDesign from '../../../packages/index' // 本地开发
+import SeeharDesign from 'seehar-design-vue'
 import 'seehar-design-vue/lib/style.css'
 // import "../vitepress/style/tailwind.css"
 
@@ -29,7 +29,7 @@ export default {
     extends: DefaultTheme, // 默认主题
     enhanceApp(ctx) {
         // 注册全局组件
-        ctx.app.use(SeeharDesignVue)
+        ctx.app.use(SeeharDesign)
         ctx.app.component('demo', VPDemo)
     }
 }

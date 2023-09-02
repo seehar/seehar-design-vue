@@ -5,7 +5,9 @@
         <hr style="margin: 32px 100px" />
         <img src="/favicon.png" alt="seehar_design_vue" title="seehar_design_vue" />
         <div class="mx-10">
-            <ShButton :loading="true">按钮组件</ShButton>
+            <ShButton type="default">default</ShButton>
+            <ShButton>default</ShButton>
+            <ShButton type="primary">primary</ShButton>
             <sh-card>111</sh-card>
             <div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500">22</div>
             <div class="bg-gradient-to-r from-primary">333</div>
@@ -20,6 +22,17 @@ import { useDark, useToggle } from '@vueuse/core'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
+
+withDefaults(
+    defineProps<{
+        size?: number
+        labels?: string[]
+    }>(),
+    {
+        size: 3,
+        labels: () => ['default label']
+    }
+)
 </script>
 
 <style>

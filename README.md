@@ -55,11 +55,11 @@ pnpm install seehar-design-vue --save
 import { createApp } from 'vue'
 import App from './App.vue'
 // 完整引入组件库
-import SeeharDesignVue from 'seehar-design-vue'
+import SeeharDesign from 'seehar-design-vue'
 
 const app = createApp(App)
 // 全局安装
-app.use(SeeharDesignVue).mount('#app')
+app.use(SeeharDesign).mount('#app')
 ```
 
 组件当中

@@ -9,8 +9,8 @@
  * chore：构建过程或辅助工具的变动
  */
 module.exports = {
-    extends: [
-        // 直接继承官网规则
-        '@commitlint/config-conventional'
-    ]
+  extends: [
+    // 直接继承官网规则
+    '@commitlint/config-conventional'
+  ]
 }
