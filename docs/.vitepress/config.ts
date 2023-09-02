@@ -40,6 +40,7 @@ export const config: UserConfig = {
       copyright: `<a target="_blank" href="https://github.com/seehar" class="text-primary">Copyright &copy; 2023 - ${new Date().getFullYear()} &nbsp;seehar</a>`
     }
   },
+  cleanUrls: true,
   markdown: {
     lineNumbers: true,
     config: (md) => mdPlugin(md)
