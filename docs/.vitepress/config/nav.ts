@@ -8,17 +8,17 @@ import navLocale from '../i18n/pages/nav.json'
 import { REPO_PATH } from './global'
 
 function getNav() {
-    return Object.values(navLocale[lang])
+  return Object.values(navLocale[lang])
 }
 
 const dropDown = [
-    {
-        text: '更多',
-        items: [
-            { text: 'GitHub', link: `https://github.com/${REPO_PATH}`, icon: 'github' },
-            { text: 'Blog', link: 'https://seehar.com' }
-        ]
-    }
+  {
+    text: '更多',
+    items: [
+      { text: 'GitHub', link: `https://github.com/${REPO_PATH}`, icon: 'github' },
+      { text: 'Blog', link: 'https://seehar.com' }
+    ]
+  }
 ]
 
 export const nav = [...getNav(), ...dropDown]

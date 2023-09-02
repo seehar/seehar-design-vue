@@ -36,41 +36,41 @@ A Vue.js 3 UI library
 
 ### 快速搭建
 
--   1、根目录创建 docs 文件夹
+- 1、根目录创建 docs 文件夹
 
 ```shell
 mkdir docs && cd docs
 ```
 
--   2、初始化
+- 2、初始化
 
 ```shell
 yarn init
 ```
 
--   3、安装 `VitePress`
+- 3、安装 `VitePress`
 
 ```shell
 yarn add --dev vitepress
 ```
 
--   4、创建第一篇文档
+- 4、创建第一篇文档
 
 ```shell
 echo '# Hello Vue3' > index.md
 ```
 
--   5、在`package.json`中添加脚本
+- 5、在`package.json`中添加脚本
 
 直接使用.
 
 ```json
 {
-    "scripts": {
-        "docs:dev": "vitepress dev .",
-        "docs:build": "vitepress build .",
-        "docs:serve": "vitepress serve ."
-    }
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:serve": "vitepress serve ."
+  }
 }
 ```
 
@@ -78,20 +78,20 @@ echo '# Hello Vue3' > index.md
 
 ```json
 {
-    "name": "@seehar/seehar-design-vue",
-    "private": false,
-    "scripts": {
-        "docs:dev": "vitepress dev .",
-        "docs:build": "vitepress build .",
-        "docs:serve": "vitepress serve ."
-    },
-    "devDependencies": {
-        "vitepress": "^0.22.4"
-    }
+  "name": "@seehar/seehar-design-vue",
+  "private": false,
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:serve": "vitepress serve ."
+  },
+  "devDependencies": {
+    "vitepress": "^0.22.4"
+  }
 }
 ```
 
--   6、启动文档站点
+- 6、启动文档站点
 
 ```shell
 yarn docs:dev
@@ -110,60 +110,60 @@ touch config.js
 
 toDo: 这部分可添加脚本，根据组件自动生成 sidebar
 
--   sidebar：左侧菜单
+- sidebar：左侧菜单
 
 ```javascript
 const sidebar = {
-    '/guide/': [
+  '/guide/': [
+    {
+      text: '基础',
+      children: [
+        { text: '安装', link: '/guide/installation' },
+        { text: '快速开始', link: '/guide/quickstart' }
+      ]
+    },
+    {
+      text: '进阶',
+      children: [
         {
-            text: '基础',
-            children: [
-                { text: '安装', link: '/guide/installation' },
-                { text: '快速开始', link: '/guide/quickstart' }
-            ]
+          text: '主题',
+          link: '/guide/theming'
         },
         {
-            text: '进阶',
-            children: [
-                {
-                    text: '主题',
-                    link: '/guide/theming'
-                },
-                {
-                    text: '更新日志',
-                    link: '/guide/changelog'
-                }
-            ]
+          text: '更新日志',
+          link: '/guide/changelog'
         }
-    ],
-    '/component/': [
-        {
-            text: '基础组件',
-            children: [{ link: '/component/button', text: 'Button' }]
-        }
-    ]
+      ]
+    }
+  ],
+  '/component/': [
+    {
+      text: '基础组件',
+      children: [{ link: '/component/button', text: 'Button' }]
+    }
+  ]
 }
 ```
 
--   nav：顶部导航
+- nav：顶部导航
 
 ```javascript
 const nav = [
-    {
-        text: '指南',
-        link: '/guide/design',
-        activeMatch: '/guide/'
-    },
-    {
-        text: '组件',
-        link: '/component/button',
-        activeMatch: '/component/'
-    },
-    {
-        text: '资源',
-        link: '/resource/index',
-        activeMatch: '/resource/'
-    }
+  {
+    text: '指南',
+    link: '/guide/design',
+    activeMatch: '/guide/'
+  },
+  {
+    text: '组件',
+    link: '/component/button',
+    activeMatch: '/component/'
+  },
+  {
+    text: '资源',
+    link: '/resource/index',
+    activeMatch: '/resource/'
+  }
 ]
 ```
 
@@ -193,49 +193,49 @@ name: Publish Docs Deploy
 #        branches: [ $default-branch ]
 #    pull_request:
 on:
-    push:
-        # 以下 分支有 push 时触发
-        branches:
-            - master
-            - main
-            - feature/major-dev
+  push:
+    # 以下 分支有 push 时触发
+    branches:
+      - master
+      - main
+      - feature/major-dev
 
 # 作业是在同一运行服务器上执行的一组步骤
 jobs:
-    # 作业名称
-    deploy:
-        # 运行器（这里是Ubuntu系统）
-        runs-on: ubuntu-latest
-        # 步骤是可以在作业中运行命令的单个任务
-        # 步骤可以是操作或 shell 命令
-        steps:
-            # 检出推送的代码
-            - name: Checkout - 检出代码
-              uses: actions/checkout@v2
+  # 作业名称
+  deploy:
+    # 运行器（这里是Ubuntu系统）
+    runs-on: ubuntu-latest
+    # 步骤是可以在作业中运行命令的单个任务
+    # 步骤可以是操作或 shell 命令
+    steps:
+      # 检出推送的代码
+      - name: Checkout - 检出代码
+        uses: actions/checkout@v2
 
-            # 使用pnpm
-            - name: Setup pnpm
-              uses: pnpm/action-setup@v2
+      # 使用pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
 
-            # Node版本
-            - name: Setup Node.js v16
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 16
-                  cache: pnpm
+      # Node版本
+      - name: Setup Node.js v16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
 
-            - name: Install NodeModules - 安装依赖
-              run: cd docs && pnpm install # 安装依赖
+      - name: Install NodeModules - 安装依赖
+        run: cd docs && pnpm install # 安装依赖
 
-            - name: Build - 打包
-              run: pnpm run docs:build # 打包
+      - name: Build - 打包
+        run: pnpm run docs:build # 打包
 
-            - name: Dir - 打包结果
-              run: cd docs/.vitepress/dist && ls -ll # 打包结果
+      - name: Dir - 打包结果
+        run: cd docs/.vitepress/dist && ls -ll # 打包结果
 
-            - name: Deploy  - 部署
-              uses: peaceiris/actions-gh-pages@v3 # 使用部署到 GitHub pages 的 action
-              with:
-                  github_token: ${{ secrets.CL_TOKEN }} # github_token，仓库secrets配置
-                  publish_dir: docs/.vitepress/dist # 部署打包后的 dist 目录
+      - name: Deploy  - 部署
+        uses: peaceiris/actions-gh-pages@v3 # 使用部署到 GitHub pages 的 action
+        with:
+          github_token: ${{ secrets.CL_TOKEN }} # github_token，仓库secrets配置
+          publish_dir: docs/.vitepress/dist # 部署打包后的 dist 目录
 ```

@@ -1,26 +1,26 @@
 {
-    "zh-CN": {
-        "basic": {
-            "text": "基础组件",
-            "items": [
-                {
-                    "link": "/button",
-                    "text": "Button"
-                },
-                {
-                    "link": "/card",
-                    "text": "Card"
-                }
-            ]
+  "zh-CN": {
+    "basic": {
+      "text": "基础组件",
+      "items": [
+        {
+          "link": "/button",
+          "text": "Button"
         },
-        "layout": {
-            "text": "布局",
-            "items": [
-                {
-                    "link": "/layout",
-                    "text": "Layout"
-                }
-            ]
+        {
+          "link": "/card",
+          "text": "Card"
         }
+      ]
+    },
+    "layout": {
+      "text": "布局",
+      "items": [
+        {
+          "link": "/layout",
+          "text": "Layout"
+        }
+      ]
     }
+  }
 }

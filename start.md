@@ -60,13 +60,13 @@ Node Version：**>=16.0.0** 可以选择通过`vite`提供模板创建，也可�
 
 [https://vitejs.dev/guide/#scaffolding-your-first-vite-project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
--   npm
+- npm
 
 ```bash
 npm init vite@latest
 ```
 
--   yarn
+- yarn
 
 ```bash
 yarn create vite
@@ -198,39 +198,39 @@ pnpm install less
 
 ```css
 button {
-    outline: none;
+  outline: none;
 }
 .we-button {
-    padding: 8px 12px;
-    overflow: hidden;
-    border-radius: 6px;
-    border: 0;
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    outline: none;
-    font-weight: 400;
-    -webkit-appearance: none;
-    user-select: none;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all 0.1s linear;
-    box-sizing: border-box;
+  padding: 8px 12px;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  font-weight: 400;
+  -webkit-appearance: none;
+  user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.1s linear;
+  box-sizing: border-box;
 }
 
 .we-button-type-default {
-    background: $primaryColor;
-    color: $white;
+  background: $primaryColor;
+  color: $white;
 }
 .we-button-disabled {
+  background-color: #f7f7fa;
+  cursor: not-allowed;
+  color: $black;
+  &:focus,
+  &:hover {
     background-color: #f7f7fa;
-    cursor: not-allowed;
-    color: $black;
-    &:focus,
-    &:hover {
-        background-color: #f7f7fa;
-        outline: none;
-    }
+    outline: none;
+  }
 }
 ```
 
@@ -238,9 +238,9 @@ button {
 
 ```vue
 <template>
-    <button :class="[classString]" :disabled="disabled">
-        <slot></slot>
-    </button>
+  <button :class="[classString]" :disabled="disabled">
+    <slot></slot>
+  </button>
 </template>
 
 <script lang="ts">
@@ -248,25 +248,25 @@ import { defineComponent, PropType } from 'vue'
 import './index.scss'
 
 const Props = {
-    type: {
-        type: String as PropType<string>, // 转为ts类型string
-        default: 'default'
-    },
-    disabled: {
-        type: Boolean as PropType<boolean>,
-        default: false
-    }
+  type: {
+    type: String as PropType<string>, // 转为ts类型string
+    default: 'default'
+  },
+  disabled: {
+    type: Boolean as PropType<boolean>,
+    default: false
+  }
 }
 
 export default defineComponent({
-    name: 'WeButton',
-    props: Props,
-    setup(props) {
-        const classString = ['we-button', `we-button-type-${props.type}`, props.disabled ? 'we-button-disabled' : '']
-        return {
-            classString
-        }
+  name: 'WeButton',
+  props: Props,
+  setup(props) {
+    const classString = ['we-button', `we-button-type-${props.type}`, props.disabled ? 'we-button-disabled' : '']
+    return {
+      classString
     }
+  }
 })
 </script>
 ```
@@ -282,9 +282,9 @@ import { App } from 'vue'
 
 import Button from './src/index.vue'
 Button.install = function (app: App) {
-    // 组件注册，按需引入
-    app.component(Button.name, Button)
-    return app
+  // 组件注册，按需引入
+  app.component(Button.name, Button)
+  return app
 }
 
 export default Button
@@ -315,13 +315,13 @@ export * from './component'
 
 // 完整引入组件
 const install = function (app: App) {
-    components.forEach(component => {
-        app.use(component as unknown as { install: () => any })
-    })
+  components.forEach(component => {
+    app.use(component as unknown as { install: () => any })
+  })
 }
 
 export default {
-    install
+  install
 }
 ```
 
@@ -354,14 +354,14 @@ app.use(WeDesign).mount('#app')
 
 ```vue
 <template>
-    <div class="wei-app">
-        <h1>wei-design</h1>
-        <hr />
-        <div>
-            <we-button>按钮组件</we-button>
-            <we-button style="margin-left: 12px" disabled>按钮组件</we-button>
-        </div>
+  <div class="wei-app">
+    <h1>wei-design</h1>
+    <hr />
+    <div>
+      <we-button>按钮组件</we-button>
+      <we-button style="margin-left: 12px" disabled>按钮组件</we-button>
     </div>
+  </div>
 </template>
 ```
 
@@ -379,11 +379,11 @@ run 一下，看下效果，组件库的雏形就好
 
 ### Git 提交规范
 
--   [commit 规范](https://juejin.cn/post/7138790324494827533)
+- [commit 规范](https://juejin.cn/post/7138790324494827533)
 
 ### 代码规范
 
--   [eslint + prettier](https://juejin.cn/post/7011871773687808031)
+- [eslint + prettier](https://juejin.cn/post/7011871773687808031)
 
 ## 组件库发布
 
@@ -425,35 +425,35 @@ build: {
 
 ```json
 {
-    "name": "@seehar/seehar-design-vue", // 包名，可以直接是包名，也可以@seehar[组织]/seehar-design-vue[包名]
-    "private": false, // 是否私有包，发布公共的需要设置false
-    "version": "1.0.0", // 版本，每次发布都需要修改
-    "author": "seehar@qq.com",
-    "description": "Seehar Design Design - A Vue.js 3 UI library, seehar-design-vue", // 包的简述
-    "keywords": [
-        "@seehar/seehar-design-vue" // 关键词
-    ],
-    "homepage": "https://seehar.github.io/seehar-design-vue/",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/seehar/seehar-desgin-vue.git"
+  "name": "@seehar/seehar-design-vue", // 包名，可以直接是包名，也可以@seehar[组织]/seehar-design-vue[包名]
+  "private": false, // 是否私有包，发布公共的需要设置false
+  "version": "1.0.0", // 版本，每次发布都需要修改
+  "author": "seehar@qq.com",
+  "description": "Seehar Design Design - A Vue.js 3 UI library, seehar-design-vue", // 包的简述
+  "keywords": [
+    "@seehar/seehar-design-vue" // 关键词
+  ],
+  "homepage": "https://seehar.github.io/seehar-design-vue/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seehar/seehar-desgin-vue.git"
+  },
+  // 主要上传哪些文件或者文件夹到npm
+  "files": ["lib/*", "packages/*", "Readme.md", "package.json"],
+  // 入口文件【注意文件后缀】
+  "main": "./lib/web-vue.umd.js",
+  "module": "./lib/web-vue.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/web-vue.mjs",
+      "require": "./lib/web-vue.umd.js"
     },
-    // 主要上传哪些文件或者文件夹到npm
-    "files": ["lib/*", "packages/*", "Readme.md", "package.json"],
-    // 入口文件【注意文件后缀】
-    "main": "./lib/web-vue.umd.js",
-    "module": "./lib/web-vue.mjs",
-    "exports": {
-        ".": {
-            "import": "./lib/web-vue.mjs",
-            "require": "./lib/web-vue.umd.js"
-        },
-        // 这里css页需要导出，否则导入css会报错
-        "./lib/style.css": "./lib/style.css"
-    },
-    "engines": {
-        "node": ">=16.0.0"
-    }
+    // 这里css页需要导出，否则导入css会报错
+    "./lib/style.css": "./lib/style.css"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
 ```
 
@@ -466,11 +466,11 @@ build: {
 npm login
 ```
 
--   私有发布
+- 私有发布
 
 npm publish 命令执行，默认是进行私有发布 scoped 的包私有发布时需要收费
 
--   公共发布
+- 公共发布
 
 ```shell
 npm publish --access public
@@ -520,7 +520,7 @@ app.use(WeDesign).mount('#app');
 列举了一些自己遇到的问题，希望不会帮到你如果有遇到问题，不知道怎么解决，可以到 github
 上[@wei_design/web-vue](https://github.com/wei-design/web-vue)对比代码看下是否哪里有不对的地方
 
--   【组件库发布】npm publish 时提示需要升级 TLS 1.2 的解决方案
+- 【组件库发布】npm publish 时提示需要升级 TLS 1.2 的解决方案
 
 看看 registry 是否是 https 的，否则需要切换到 https
 
@@ -528,15 +528,15 @@ app.use(WeDesign).mount('#app');
 npm config set registry https://registry.npmjs.org
 ```
 
--   【组件库 npm 使用】副作用导致打包后引入 npm 中的 css 报错
+- 【组件库 npm 使用】副作用导致打包后引入 npm 中的 css 报错
 
 [sideEffects](https://juejin.cn/post/7096307096836112398)
 
--   【文档库】运行报错报错：TypeError: Invalid value used as weak map key
+- 【文档库】运行报错报错：TypeError: Invalid value used as weak map key
 
 **md 中有无法解析的标签导致**
 
--   【组件库 npm 使用】引入`lib/style.css`导致`ModuleNotFound`错误
+- 【组件库 npm 使用】引入`lib/style.css`导致`ModuleNotFound`错误
 
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/1088766/1662047072550-bab12d22-4f10-464d-8600-d86e8cf26b70.png#clientId=u3b269c12-41b4-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=115&id=ube944a3c&name=image.png&originHeight=219&originWidth=1456&originalType=binary&ratio=1&rotation=0&showTitle=false&size=93392&status=done&style=none&taskId=u5d447d50-e0ef-4204-91b4-c252ac5c16d&title=&width=766)
 修改`exports`导出条件语法，新增`./lib/style.css`
@@ -551,7 +551,7 @@ npm config set registry https://registry.npmjs.org
 }
 ```
 
--   【文档库】vitepress 打包报错
+- 【文档库】vitepress 打包报错
 
 `To load an ES module, set "type": "module" in the package.json or use the .mjs extension.`
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/1088766/1662047185520-b9993fe5-7461-4d57-9657-1124dc085631.png#clientId=u3b269c12-41b4-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=446&id=u96df0e19&name=image.png&originHeight=623&originWidth=1071&originalType=binary&ratio=1&rotation=0&showTitle=false&size=94993&status=done&style=none&taskId=u31e850e7-5ec0-47c9-a474-c4f4697ec0a&title=&width=766)

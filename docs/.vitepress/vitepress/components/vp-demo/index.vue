@@ -1,20 +1,20 @@
 <template>
-    <ClientOnly>
-        <div class="vp-demo">
-            <!-- danger here DO NOT USE INLINE SCRIPT TAG -->
-            <div class="vp-demo__desc" v-html="decodedDescription" />
-            <div class="vp-demo__panel">
-                <vp-demo-view :path="path" />
-                <div class="vp-demo__control">
-                    <span class="vp-demo__control-btn" @click="copyRawSource">复制源码</span>
-                    <span class="vp-demo__control-btn" @click="toggleSourceVisible(!sourceVisible)">
-                        {{ sourceVisible ? '隐藏源码' : '查看源码' }}
-                    </span>
-                </div>
-            </div>
-            <vp-demo-source v-show="sourceVisible" :source="source" />
+  <ClientOnly>
+    <div class="vp-demo">
+      <!-- danger here DO NOT USE INLINE SCRIPT TAG -->
+      <div class="vp-demo__desc" v-html="decodedDescription" />
+      <div class="vp-demo__panel">
+        <vp-demo-view :path="path" />
+        <div class="vp-demo__control">
+          <span class="vp-demo__control-btn" @click="copyRawSource">复制源码</span>
+          <span class="vp-demo__control-btn" @click="toggleSourceVisible(!sourceVisible)">
+            {{ sourceVisible ? '隐藏源码' : '查看源码' }}
+          </span>
         </div>
-    </ClientOnly>
+      </div>
+      <vp-demo-source v-show="sourceVisible" :source="source" />
+    </div>
+  </ClientOnly>
 </template>
 
 <script lang="ts" setup>
@@ -25,31 +25,31 @@ import VpDemoView from './vp-demo-view.vue'
 import VpDemoSource from './vp-demo-source.vue'
 
 const props = defineProps<{
-    rawSource: string // 源码
-    source: string
-    path: string
-    description?: string
+  rawSource: string // 源码
+  source: string
+  path: string
+  description?: string
 }>()
 
 const { copy, isSupported } = useClipboard({
-    source: decodeURIComponent(props.rawSource),
-    read: false
+  source: decodeURIComponent(props.rawSource),
+  read: false
 })
 
 const [sourceVisible, toggleSourceVisible] = useToggle(false)
 
 const decodedDescription = computed(() => decodeURIComponent(props.description!))
 const copyRawSource = async () => {
-    if (!isSupported) {
-        alert('复制失败')
-    }
-    try {
-        await copy()
-        alert('已复制')
-    } catch (e: any) {
-        console.log(e)
-        alert(e.message)
-    }
+  if (!isSupported) {
+    alert('复制失败')
+  }
+  try {
+    await copy()
+    alert('已复制')
+  } catch (e: any) {
+    console.log(e)
+    alert(e.message)
+  }
 }
 </script>
 
@@ -97,5 +97,4 @@ const copyRawSource = async () => {
     }
   }
 }
-
 </style>

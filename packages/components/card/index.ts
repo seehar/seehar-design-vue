@@ -1,6 +1,6 @@
 import { App } from 'vue'
 
-import Card from './src/index.vue'
+import Card from './index.vue'
 
 const CardPlugin = {
   install(app: App) {

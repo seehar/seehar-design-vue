@@ -12,44 +12,44 @@ import VitePluginMetaEnv from 'vite-plugin-meta-env'
 const { name: DOC_NAME, version: DOC_VERSION } = pkg
 
 const alias: Alias[] = [
-    {
-        find: '@',
-        replacement: `${resolve(__dirname, './.vitepress/vitepress')}/`
-    },
-    {
-        find: /^seehar_design_vue(\/(es|lib))?$/,
-        replacement: `${resolve(__dirname, '../packages/index.ts')}/`
-    }
+  {
+    find: '@',
+    replacement: `${resolve(__dirname, './.vitepress/vitepress')}/`
+  },
+  {
+    find: /^seehar_design_vue(\/(es|lib))?$/,
+    replacement: `${resolve(__dirname, '../packages/index.ts')}/`
+  }
 ]
 
 const banner = `/*! ${DOC_NAME} v${DOC_VERSION} */\n`
 console.log(chalk.blue(banner))
 
 export default defineConfig(() => {
-    // 增加环境变量
-    const metaEnv = {
-        DOC_VERSION,
-        DOC_NAME,
-        DOC_BUILD_TIME: dayjs().format('YYYY-MM-DD HH:mm:ss')
-    }
+  // 增加环境变量
+  const metaEnv = {
+    DOC_VERSION,
+    DOC_NAME,
+    DOC_BUILD_TIME: dayjs().format('YYYY-MM-DD HH:mm:ss')
+  }
 
-    return {
-        server: {
-            open: false,
-            port: 5001,
-            host: true
-        },
-        resolve: {
-            alias
-        },
-        plugins: [
-            vueJsx(),
-            DefineOptions(),
-            UnoCSS(),
-            Inspect(),
-            // 环境变量
-            VitePluginMetaEnv(metaEnv, 'import.meta.env'),
-            VitePluginMetaEnv(metaEnv, 'process.env')
-        ]
-    }
+  return {
+    server: {
+      open: false,
+      port: 5001,
+      host: true
+    },
+    resolve: {
+      alias
+    },
+    plugins: [
+      vueJsx(),
+      DefineOptions(),
+      UnoCSS(),
+      Inspect(),
+      // 环境变量
+      VitePluginMetaEnv(metaEnv, 'import.meta.env'),
+      VitePluginMetaEnv(metaEnv, 'process.env')
+    ]
+  }
 })

@@ -1,18 +1,17 @@
-<template>
-  <button class="px-4 py-1 rounded cursor-pointer text-sm border border-gray-800/20">
-    <slot />
-    <span>{{ type }}</span>
-  </button>
-</template>
-
-<script setup lang="ts">
-defineProps<{
-  type?: 'default' | 'primary' | 'danger'
-}>()
-</script>
-
 <script lang="ts">
 export default {
   name: 'ShButton'
 }
 </script>
+
+<script lang="ts" setup>
+defineProps<{
+  type?: 'default' | 'primary' | 'danger'
+}>()
+</script>
+
+<template>
+  <button :class="['border rounded px-2 py-1', type === 'primary' ? 'bg-primary text-white' : '']">
+    <slot />
+  </button>
+</template>

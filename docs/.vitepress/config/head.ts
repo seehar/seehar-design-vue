@@ -5,30 +5,30 @@
  */
 import type { HeadConfig } from 'vitepress'
 export const head: HeadConfig[] = [
-    [
-        'link',
-        {
-            rel: 'icon',
-            href: 'https://seehar.github.io/seehar-design-vue/images/logo.png',
-            type: 'image'
-        }
-    ],
-    [
-        'meta',
-        {
-            name: 'theme-color',
-            content: '#ffffff'
-        }
-    ],
-    ['meta', { rel: 'referrer', href: `same-origin` }],
-    ['meta', { name: 'keywords', content: `seehar-design-vue,A Vue.js 3 UI library,vue,vue3` }],
-    ['meta', { name: 'description', content: `seehar|seehar-design-vue|A Vue.js 3 UI library|vue|vue3` }],
-    ['meta', { name: 'author', content: `seehar` }],
-    ['meta', { name: 'baidu-site-verification', content: `code-bakUos2v8l` }],
-    [
-        'script',
-        {},
-        `
+  [
+    'link',
+    {
+      rel: 'icon',
+      href: 'https://seehar.github.io/seehar-design-vue/images/logo.png',
+      type: 'image'
+    }
+  ],
+  [
+    'meta',
+    {
+      name: 'theme-color',
+      content: '#ffffff'
+    }
+  ],
+  ['meta', { rel: 'referrer', href: `same-origin` }],
+  ['meta', { name: 'keywords', content: `seehar-design-vue,A Vue.js 3 UI library,vue,vue3` }],
+  ['meta', { name: 'description', content: `seehar|seehar-design-vue|A Vue.js 3 UI library|vue|vue3` }],
+  ['meta', { name: 'author', content: `seehar` }],
+  ['meta', { name: 'baidu-site-verification', content: `code-bakUos2v8l` }],
+  [
+    'script',
+    {},
+    `
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
@@ -37,5 +37,5 @@ export const head: HeadConfig[] = [
           s.parentNode.insertBefore(hm, s);
         })();
     `
-    ]
+  ]
 ]

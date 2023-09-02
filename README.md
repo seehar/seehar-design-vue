@@ -7,9 +7,9 @@ A Vue.js 3 UI library
 
 ---
 
--   🔭 [Vite](https://vitejs.dev)
--   💪 [Vue3](https://vuejs.org)
--   🔥 TypeScript
+- 🔭 [Vite](https://vitejs.dev)
+- 💪 [Vue3](https://vuejs.org)
+- 🔥 TypeScript
 
 [快速开始](https://seehar.github.io/seehar-design-vue/)
 

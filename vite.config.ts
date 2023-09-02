@@ -1,89 +1,49 @@
-/**
- * @Author: seehar
- * @Date: 2022/7/2 12:16
- * @Description: lib.config
- */
-import { resolve } from 'path'
-import { Alias, defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
-import Markdown from 'vite-plugin-md' // vue中使用md
-// 提取ts文件
-import dts from 'vite-plugin-dts'
-// import dayjs from 'dayjs'
-// import VitePluginMetaEnv from 'vite-plugin-meta-env'
-import AutoImport from 'unplugin-auto-import/vite'
 import { fileURLToPath, URL } from 'node:url'
 
-// const { name: title, version: APP_VERSION } = require('./package.json')
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+import { resolve } from 'path'
+import dts from 'vite-plugin-dts'
+import AutoImport from 'unplugin-auto-import/vite'
 
-// const alias: Alias[] = [
-//   {
-//     find: '@',
-//     replacement: `${resolve(__dirname, './src')}`
-//   },
-//   {
-//     find: /^seehar-design-vue(\/(es|lib))?$/,
-//     replacement: `${resolve(__dirname, './packages/index.ts')}/`
-//   }
-// ]
-
-// 文档: https://vitejs.dev/config/
-export default () => {
-  // 增加环境变量
-  // const metaEnv = {
-  //   APP_VERSION,
-  //   APP_NAME: title,
-  //   APP_BUILD_TIME: dayjs().format('YYYY-MM-DD HH:mm:ss')
-  // }
-
-  return defineConfig({
-    server: {
-      open: true,
-      port: 3003,
-      host: true
-    },
-    resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
-        'seehar-design-vue': fileURLToPath(new URL('./packages/index.ts', import.meta.url))
-      }
-    },
-    // [vite库模式配置](https://cn.vitejs.dev/guide/build.html#library-mode)
-    build: {
-      outDir: 'lib',
-      lib: {
-        entry: resolve(__dirname, './packages/index.ts'),
-        name: 'SeeharDesign',
-        fileName: 'seehar-design-vue'
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    vue({ include: [/\.vue$/, /\.md$/] }),
+    vueJsx(),
+    dts(),
+    AutoImport({
+      // 自动导入 Vue 相关函数，如：ref, reactive, toRef 等
+      imports: ['vue'],
+      eslintrc: {
+        enabled: true
       },
-      rollupOptions: {
-        // 确保外部化处理那些你不想打包进库的依赖
-        external: ['vue'],
-        output: {
-          // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
-          globals: {
-            vue: 'Vue'
-          }
+      dts: resolve(resolve(__dirname, 'packages'), 'auto-imports.d.ts')
+    })
+  ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      'seehar-design-vue': fileURLToPath(new URL('./packages/index.ts', import.meta.url))
+    }
+  },
+  build: {
+    outDir: 'lib',
+    lib: {
+      entry: resolve(__dirname, './packages/index.ts'),
+      name: 'SeeharDesign',
+      fileName: 'seehar-design-vue'
+    },
+    rollupOptions: {
+      // 确保外部化处理那些你不想打包进库的依赖
+      external: ['vue'],
+      output: {
+        // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
+        globals: {
+          vue: 'Vue'
         }
       }
-    },
-    plugins: [
-      vue({ include: [/\.vue$/, /\.md$/] }),
-      vueJsx(),
-      Markdown(),
-      dts(),
-      // 环境变量
-      // VitePluginMetaEnv(metaEnv, 'import.meta.env'),
-      // VitePluginMetaEnv(metaEnv, 'process.env'),
-      AutoImport({
-        // 自动导入 Vue 相关函数，如：ref, reactive, toRef 等
-        imports: ['vue'],
-        eslintrc: {
-          enabled: true
-        },
-        dts: resolve(resolve(__dirname, 'packages'), 'auto-imports.d.ts')
-      })
-    ]
-  })
-}
+    }
+  }
+})

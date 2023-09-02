@@ -8,39 +8,39 @@ import guideLocale from '../i18n/pages/guide.json'
 import componentLocale from '../i18n/pages/component.json'
 
 type Item = {
-    text: string
-    items?: Item[]
-    link?: string
+  text: string
+  items?: Item[]
+  link?: string
 }
 
 function getGuideSidebar() {
-    return Object.values(guideLocale[lang]).map((item: Item) => mapPrefix(item, lang))
+  return Object.values(guideLocale[lang]).map((item: Item) => mapPrefix(item, lang))
 }
 
 function getComponentsSideBar() {
-    return Object.values(componentLocale[lang]).map((item: Item) => mapPrefix(item, lang, '/component'))
+  return Object.values(componentLocale[lang]).map((item: Item) => mapPrefix(item, lang, '/component'))
 }
 
 // return sidebar with language configs.
 // this might create duplicated data but the overhead is ignorable
 const getSidebar = () => {
-    return {
-        '/guide/': getGuideSidebar(),
-        '/component/': getComponentsSideBar()
-    }
+  return {
+    '/guide/': getGuideSidebar(),
+    '/component/': getComponentsSideBar()
+  }
 }
 
 function mapPrefix(item: Item, lang: string, prefix = ''): Item {
-    if (item.items && item.items.length > 0) {
-        return {
-            ...item,
-            items: item.items.map(child => mapPrefix(child, lang, prefix))
-        }
-    }
+  if (item.items && item.items.length > 0) {
     return {
-        ...item,
-        link: `${prefix}${item.link}`
+      ...item,
+      items: item.items.map(child => mapPrefix(child, lang, prefix))
     }
+  }
+  return {
+    ...item,
+    link: `${prefix}${item.link}`
+  }
 }
 
 export const sidebar = getSidebar()

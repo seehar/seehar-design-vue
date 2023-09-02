@@ -9,7 +9,7 @@ export * from './component'
 import components from './component'
 
 const SeeharDesign = (app: App): void => {
-  components.forEach(component => {
+  components.forEach((component) => {
     component.install(app)
   })
 }
