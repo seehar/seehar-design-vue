@@ -24,7 +24,7 @@ specifiers:
   postcss: 8.4.27
   prismjs: ^1.28.0
   search-insights: ^2.7.0
-  seehar-design-vue: ^0.0.6
+  seehar-design-vue: npm:seehar-design-vue@latest
   tailwindcss: 3.3.3
   unocss: ^0.55.2
   unplugin-vue-components: ^0.25.1
