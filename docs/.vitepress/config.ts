@@ -15,7 +15,7 @@ const env = process.env.NODE_ENV
 
 export const config: UserConfig = {
   head,
-  lang: '',
+  lang: 'zh-CN',
   base: env === 'production' ? '/seehar-design-vue' : '',
   title: 'Seehar Design Vue',
   description: 'A Vue 3 UI Framework',
@@ -23,10 +23,16 @@ export const config: UserConfig = {
   themeConfig: {
     editLink: {
       // 编辑此页
-      pattern: `https://github.com/${REPO_PATH}/edit/${REPO_BRANCH}/docs/:path`
+      pattern: `https://github.com/${REPO_PATH}/edit/${REPO_BRANCH}/docs/:path`,
+      text: "在 GitHub 上编辑此页"
+    },
+    lastUpdated: {
+      text: "更新于"
+    },
+    outline: {
+      label: '大纲'
     },
     siteTitle: 'Seehar Design Vue',
-    lastUpdated: '最后更新时间',
     logo: '/images/logo.png',
     logoSmall: '/images/logo.png',
     sidebar, // 没有s
