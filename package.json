@@ -38,10 +38,10 @@
     "release:minor": "npm run release -- --release-as minor",
     "release:patch": "npm run release -- --release-as patch"
   },
-  "homepage": "https://seehar.github.io/eehar-design-vue/",
+  "homepage": "https://seehar.github.io/seehar-design-vue/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seehar/eehar-design-vue.git"
+    "url": "https://github.com/seehar/seehar-design-vue.git"
   },
   "files": [
     "lib/*",

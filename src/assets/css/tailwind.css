@@ -1,8 +1,11 @@
-@config "tailwind.config.js"
+/*@config "tailwind.config.js"*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-  --theme-primary: #ca8b4a;
-  --theme-secondary: #bb12f5;
+
+@layer base {
+  :root {
+    --theme-primary: 202, 139, 74;
+    --theme-secondary: 187, 18, 245;
+  }
 }

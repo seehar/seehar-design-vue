@@ -4,7 +4,7 @@
  * @Description: 组件入口
  */
 import { App } from 'vue'
-import './assets/css/tailwind.css'
+// import './assets/css/tailwind.css'
 export * from './component'
 import components from './component'
 

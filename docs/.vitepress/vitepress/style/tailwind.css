@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --theme-primary: #ffa400;
-  --theme-secondary: #ff2d51;
+@layer base {
+  :root {
+    --theme-primary: 255, 164, 0;
+    --theme-secondary: 255, 45, 81;
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-slate-900 h-screen">
+  <div class="bg-white dark:bg-slate-900 text-center dark:text-white/80">
     <h2>Seehar Design Vue</h2>
     <a class="cursor-pointer" @click="toggleDark()">{{ isDark }}</a>
     <hr style="margin: 32px 100px" />
@@ -8,9 +8,12 @@
 
     <div class="space-x-2">
       <h1 class="dark:text-white/80">按钮</h1>
-      <sh-button type="default">default</sh-button>
       <sh-button>default</sh-button>
       <sh-button type="primary">primary</sh-button>
+      <sh-button type="danger">danger</sh-button>
+      <sh-button type="success">success</sh-button>
+      <sh-button type="warning">warning</sh-button>
+      <sh-button type="info">info</sh-button>
     </div>
 
     <div class="my-4">
@@ -19,7 +22,10 @@
     </div>
 
     <div class="text-primary">文字</div>
+    <div class="text-primary/20">文字</div>
     <div class="text-secondary">文字</div>
+    <div class="text-secondary/90">文字</div>
+    <div class="text-black/20">文字</div>
   </div>
 </template>
 
@@ -40,18 +46,3 @@ withDefaults(
   }
 )
 </script>
-
-<style>
-* {
-  padding: 0;
-  margin: 0;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-</style>

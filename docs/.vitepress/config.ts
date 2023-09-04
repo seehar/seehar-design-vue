@@ -24,10 +24,10 @@ export const config: UserConfig = {
     editLink: {
       // 编辑此页
       pattern: `https://github.com/${REPO_PATH}/edit/${REPO_BRANCH}/docs/:path`,
-      text: "在 GitHub 上编辑此页"
+      text: '在 GitHub 上编辑此页'
     },
     lastUpdated: {
-      text: "更新于"
+      text: '更新于'
     },
     outline: {
       label: '大纲'

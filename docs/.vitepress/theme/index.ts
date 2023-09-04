@@ -5,14 +5,17 @@
  */
 import DefaultTheme from 'vitepress/theme'
 // import SeeharDesign from '../../../packages/index' // 本地开发
+// import "../vitepress/style/tailwind.css"
 import SeeharDesign from 'seehar-design-vue'
 import 'seehar-design-vue/lib/style.css'
-// import "../vitepress/style/tailwind.css"
 
 import { VPDemo } from '../vitepress'
 
 // console.log(import.meta.env)
-console.log("%c seehar love tt forever ", 'padding: 1px; border-radius: 3px; color: #fff; background: #ff2d51')
+console.log(
+  '%c seehar love tt forever ',
+  'padding: 1px; border-radius: 3px; color: #fff; background: #ff2d51'
+)
 
 // 版本及打包日期
 console.log(

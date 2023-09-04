@@ -9,21 +9,13 @@ module.exports = {
   content: [
     './index.html',
     './docs/**/*.{vue,js,ts,jsx,tsx}',
-    './examples/**/*.{vue,js,ts,jsx,tsx}'
   ],
-  // corePlugins: {
-  //   preflight: false,
-  // },
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        // primary: '#708fff'
-        primary: 'var(--theme-primary)',
-        secondary: 'var(--theme-secondary)'
-      },
-      boxShadow: {
-        default: '0 2px 8px rgba(0, 0, 0, 0.3)'
+        primary: 'rgba(var(--theme-primary), <alpha-value>)',
+        secondary: 'rgba(var(--theme-secondary), <alpha-value>)'
       }
     }
   },
