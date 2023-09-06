@@ -15,14 +15,17 @@ A Vue.js 3 UI library
 
 ## 安装
 
-node：>=16.0.0
-
 ### npm
 
-这里推荐`pnpm`进行安装
+```bash
+# npm
+npm install seehar-design-vue --save
 
-```sh
-pnpm install seehar-design-vue --save
+# pnpm
+pnpm add seehar-design-vue
+
+# yarn
+yarn add seehar-design-vue
 ```
 
 ### cdn
@@ -32,8 +35,14 @@ pnpm install seehar-design-vue --save
 [资源浏览](https://unpkg.com/seehar-design-vue/)
 
 ```html
-<link rel="stylesheet" href="//unpkg.com/seehar-design-vue/lib/style.css" />
-<script src="//unpkg.com/seehar-design-vue"></script>
+<head>
+  <!-- Import style -->
+  <link rel="stylesheet" href="//unpkg.com/seehar-design-vue/lib/style.css" />
+  <!-- Import Vue 3 -->
+  <script src="//unpkg.com/vue@3"></script>
+  <!-- Import component library -->
+  <script src="//unpkg.com/seehar-design-vue"></script>
+</head>
 ```
 
 #### jsdelivr
@@ -41,8 +50,14 @@ pnpm install seehar-design-vue --save
 [资源浏览](https://cdn.jsdelivr.net/npm/seehar-design-vue/)
 
 ```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/seehar-design-vue/lib/style.css" />
-<script src="//cdn.jsdelivr.net/npm/seehar-design-vue"></script>
+<head>
+  <!-- Import style -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/seehar-design-vue/lib/style.css" />
+  <!-- Import Vue 3 -->
+  <script src="//cdn.jsdelivr.net/npm/vue@3"></script>
+  <!-- Import component library -->
+  <script src="//cdn.jsdelivr.net/npm/seehar-design-vue"></script>
+</head>
 ```
 
 ## 使用

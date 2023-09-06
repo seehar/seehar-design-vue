@@ -8,15 +8,27 @@ export default {
 withDefaults(
   defineProps<{
     type?: 'default' | 'primary' | 'danger' | 'success' | 'info' | 'warning' | 'lint'
+    size?: 'small' | 'default' | 'large'
+    circle?: boolean
+    color?: string
+    disabled?: boolean
+    icon?: string
+    loading?: boolean
+    round?: boolean
   }>(),
   {
-    type: 'default'
+    type: 'default',
+    size: 'default',
+    circle: false,
+    disabled: false,
+    loading: false,
+    round: false
   }
 )
 </script>
 
 <template>
-  <button :class="['cursor-pointer rounded px-2 py-1 text-sm', type]">
+  <button :class="['cursor-pointer px-2 py-1 text-sm', type, circle ? 'rounded-full' : 'rounded']">
     <slot />
   </button>
 </template>
