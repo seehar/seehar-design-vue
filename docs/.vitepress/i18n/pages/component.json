@@ -5,20 +5,24 @@
       "items": [
         {
           "link": "/button",
-          "text": "Button"
+          "text": "Button 按钮"
         },
         {
-          "link": "/card",
-          "text": "Card"
+          "link": "/icon",
+          "text": "Icon 图标"
+        },
+        {
+          "link": "/layout",
+          "text": "Layout 布局"
         }
       ]
     },
     "layout": {
-      "text": "布局",
+      "text": "Data 数据展示",
       "items": [
         {
-          "link": "/layout",
-          "text": "Layout"
+          "link": "/card",
+          "text": "Card 卡片"
         }
       ]
     }
