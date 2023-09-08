@@ -39,7 +39,7 @@ const isBorder = () => {
   <button
     :class="[
       'text-sm',
-      ghost ? `${type}-ghost` : type,
+      `${type}${ghost ? '-ghost' : ''}${disabled ? '-disable' : ''}`,
       {
         'button-border': isBorder()
       },

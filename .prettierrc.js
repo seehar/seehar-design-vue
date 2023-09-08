@@ -10,5 +10,6 @@ module.exports = {
   htmlWhitespaceSensitivity: 'ignore', // 指定 HTML 文件的全局空白区域敏感度, "ignore" - 空格被认为是不敏感的
   jsxBracketSameLine: false,
   arrowParens: 'avoid', // 箭头函数参数括号 默认avoid 可选 avoid| always， avoid 能省略括号的时候就省略 例如x => x，always 总是有括号
-  proseWrap: 'always' // 当超出print width（上面有这个参数）时就折行
+  proseWrap: 'always', // 当超出print width（上面有这个参数）时就折行
+  endOfLine: 'lf'
 }

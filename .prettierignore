@@ -10,4 +10,4 @@
 
 /public/*
 /lib/*
-docs/.vitepress/cache/deps/*
+docs/.vitepress/cache/*
