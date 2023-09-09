@@ -10,6 +10,42 @@
   @apply border-primary dark:border-primary;
 }
 
+.button-size-large {
+  @apply px-5 py-2 rounded;
+}
+
+.button-size-default {
+  @apply px-3 py-1 rounded;
+}
+
+.button-size-small {
+  @apply px-2 py-1 text-xs rounded;
+}
+
+.button-size-large-round {
+  @apply px-5 py-2 rounded-3xl;
+}
+
+.button-size-default-round {
+  @apply px-3 py-1 rounded-2xl;
+}
+
+.button-size-small-round {
+  @apply px-2 py-1 text-xs rounded-2xl;
+}
+
+.button-size-large-circle {
+  @apply rounded-full p-2;
+}
+
+.button-size-default-circle {
+  @apply rounded-full p-[4px];
+}
+
+.button-size-small-circle {
+  @apply rounded-full p-[2px];
+}
+
 .default {
   @apply button-border-hover-primary border-gray-200 dark:border-gray-600 hover:text-primary hover:bg-primary/10;
 }
@@ -31,7 +67,7 @@
 }
 
 .primary-disable {
-  @apply bg-primary/40 text-white disabled:text-primary/50 dark:disabled:text-primary/50;
+  @apply bg-primary/40 text-white/60;
 }
 
 .primary-ghost {
@@ -47,7 +83,7 @@
 }
 
 .danger-disable {
-  @apply bg-red-500/40 text-white/50;
+  @apply bg-red-500/40 text-white/60;
 }
 
 .danger-ghost {
@@ -63,7 +99,7 @@
 }
 
 .success-disable {
-  @apply bg-green-500/40 text-white/50;
+  @apply bg-green-500/40 text-white/60;
 }
 
 .success-ghost {
@@ -79,7 +115,7 @@
 }
 
 .info-disable {
-  @apply bg-gray-400/40 text-white/50;
+  @apply bg-gray-400/40 text-white/60;
 }
 
 .info-ghost {
