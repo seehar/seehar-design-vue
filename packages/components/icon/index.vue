@@ -5,9 +5,19 @@ export default {
 </script>
 
 <script setup lang="ts">
-import { BellIcon } from '@heroicons/vue/24/outline'
+import '../../assets/icon/iconfont.js'
+
+withDefaults(
+  defineProps<{
+    name: string
+    size: number | string
+  }>(),
+  {}
+)
 </script>
 
 <template>
-  <BellIcon class="h-5 w-5" aria-hidden="true" />
+  <svg class="inline-block" aria-hidden="true" :width="size" :height="size">
+    <use :xlink:href="`#icon-${name}`" fill="#444"></use>
+  </svg>
 </template>
