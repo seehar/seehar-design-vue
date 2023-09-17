@@ -12,8 +12,9 @@ const currentColor = computed(() => {
 </script>
 
 <template>
-  <div class="space-x-3">
-    <sh-icon name="wode" class="text-white" size="1rem" :color="currentColor" />
-    <sh-icon name="wode" class="text-white" size="20" :color="currentColor" />
+  <div class="grid">
+    <div class="bg-black:20 dark:bg-white/20 rounded-md flex justify-center items-center cursor-pointer h-20 w-20">
+      <sh-icon name="wode" class="text-white" size="2rem" :color="currentColor" />
+    </div>
   </div>
 </template>
