@@ -8,9 +8,9 @@ import { App } from 'vue'
 export * from './component'
 import components from './component'
 
-const SeeharDesign = (app: App): void => {
+const SeeharDesign = (Vue: App): void => {
   components.forEach((component) => {
-    component.install(app)
+    component.install(Vue)
   })
 }
 

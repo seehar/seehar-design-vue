@@ -3,8 +3,8 @@ import { App } from 'vue'
 import Card from './index.vue'
 
 const CardPlugin = {
-  install(app: App) {
-    app.component(Card.name, Card)
+  install(Vue: App) {
+    Vue.component(Card.name, Card)
   }
 }
 

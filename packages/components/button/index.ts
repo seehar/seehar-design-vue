@@ -3,8 +3,8 @@ import { App } from 'vue'
 import Button from './index.vue'
 
 const ButtonPlugin = {
-  install(app: App) {
-    app.component(Button.name, Button)
+  install(Vue: App) {
+    Vue.component(Button.name, Button)
   }
 }
 

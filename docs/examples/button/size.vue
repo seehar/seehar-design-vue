@@ -13,9 +13,15 @@
     </div>
 
     <div class="space-x-3">
-      <sh-button size="large" circle><sh-icon /></sh-button>
-      <sh-button circle><sh-icon /></sh-button>
-      <sh-button size="small" circle><sh-icon /></sh-button>
+      <sh-button size="large" circle>
+        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      </sh-button>
+      <sh-button circle>
+        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      </sh-button>
+      <sh-button size="small" circle>
+        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      </sh-button>
     </div>
   </div>
 </template>

@@ -11,3 +11,4 @@
 /public/*
 /lib/*
 docs/.vitepress/cache/*
+packages/assets/icon

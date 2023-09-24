@@ -28,12 +28,24 @@
     </div>
 
     <div class="space-x-3">
-      <sh-button circle><sh-icon /></sh-button>
-      <sh-button type="primary" circle><sh-icon /></sh-button>
-      <sh-button type="danger" circle><sh-icon /></sh-button>
-      <sh-button type="success" circle><sh-icon /></sh-button>
-      <sh-button type="warning" circle><sh-icon /></sh-button>
-      <sh-button type="info" circle><sh-icon /></sh-button>
+      <sh-button circle>
+        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      </sh-button>
+      <sh-button type="primary" circle>
+        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      </sh-button>
+      <sh-button type="danger" circle>
+        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      </sh-button>
+      <sh-button type="success" circle>
+        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      </sh-button>
+      <sh-button type="warning" circle>
+        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      </sh-button>
+      <sh-button type="info" circle>
+        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      </sh-button>
     </div>
   </div>
 </template>
