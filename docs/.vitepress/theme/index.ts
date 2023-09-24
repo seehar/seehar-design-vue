@@ -4,9 +4,9 @@
  * @Description: 主题配置
  */
 import DefaultTheme from 'vitepress/theme'
-import SeeharDesign from '../../../packages/index' // 本地开发
-// import SeeharDesign from 'seehar-design-vue'
-// import 'seehar-design-vue/lib/style.css'
+// import SeeharDesign from '../../../packages/index' // 本地开发
+import SeeharDesign from 'seehar-design-vue'
+import 'seehar-design-vue/lib/style.css'
 import '../vitepress/style/tailwind.css'
 
 import { VPDemo } from '../vitepress'

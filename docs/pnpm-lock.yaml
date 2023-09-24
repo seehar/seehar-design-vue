@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.28.0
     version: 1.28.0
   seehar-design-vue:
-    specifier: npm:seehar-design-vue@latest
-    version: registry.npmjs.org/seehar-design-vue@0.0.6(vue@3.2.37)
+    specifier: ^0.0.7
+    version: registry.npmjs.org/seehar-design-vue@0.0.7(vue@3.2.37)
   vue:
     specifier: ^3.2.33
     version: 3.2.37
@@ -1725,7 +1725,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: registry.npmjs.org/graceful-fs@4.2.10
+      graceful-fs: registry.npmjs.org/graceful-fs@4.2.11
     dev: true
 
   /kolorist@1.8.0:
@@ -3195,6 +3195,17 @@ packages:
     dev: true
     optional: true
 
+  registry.npmjs.org/@heroicons/vue@2.0.18(vue@3.2.37):
+    resolution: {integrity: sha512-BcTC9nq2TkwNSfQuqo96J7ehx4etezypc2YeTq7KsXWxrcrerhkgjLrxGRBnStN0wrXo0Gv4BInybqz5uBG6Cw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@heroicons/vue/-/vue-2.0.18.tgz}
+    id: registry.npmjs.org/@heroicons/vue/2.0.18
+    name: '@heroicons/vue'
+    version: 2.0.18
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.2.37
+    dev: false
+
   registry.npmjs.org/@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz}
     name: '@jridgewell/sourcemap-codec'
@@ -3616,14 +3627,6 @@ packages:
     dev: true
     optional: true
 
-  registry.npmjs.org/graceful-fs@4.2.10:
-    resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz}
-    name: graceful-fs
-    version: 4.2.10
-    requiresBuild: true
-    dev: true
-    optional: true
-
   registry.npmjs.org/graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz}
     name: graceful-fs
@@ -3747,15 +3750,16 @@ packages:
       fsevents: registry.npmjs.org/fsevents@2.3.3
     dev: true
 
-  registry.npmjs.org/seehar-design-vue@0.0.6(vue@3.2.37):
-    resolution: {integrity: sha512-f27Fj/jiARf84SMhYBja7yYh/Y105TCnm0G1SCgt+oSWLYM0lzXCithySPxoY8nmkz32+0uXAs0/kwUjD8QSng==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/seehar-design-vue/-/seehar-design-vue-0.0.6.tgz}
-    id: registry.npmjs.org/seehar-design-vue/0.0.6
+  registry.npmjs.org/seehar-design-vue@0.0.7(vue@3.2.37):
+    resolution: {integrity: sha512-3V+sm/Yg2pL7E1UOZSPJyaRcP7ZiIsR8jt3Dz6K7RGZoyvLXTJO6LrD7yUDqqhUgeyRvlHdb+GVFP6vdM03wNg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/seehar-design-vue/-/seehar-design-vue-0.0.7.tgz}
+    id: registry.npmjs.org/seehar-design-vue/0.0.7
     name: seehar-design-vue
-    version: 0.0.6
+    version: 0.0.7
     engines: {node: '>=16.0.0'}
     peerDependencies:
       vue: ^3.2.33
     dependencies:
+      '@heroicons/vue': registry.npmjs.org/@heroicons/vue@2.0.18(vue@3.2.37)
       '@rushstack/eslint-patch': registry.npmjs.org/@rushstack/eslint-patch@1.4.0
       dayjs: registry.npmjs.org/dayjs@1.11.5
       vue: 3.2.37
