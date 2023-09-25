@@ -5,7 +5,14 @@ export default {
 </script>
 
 <script setup lang="ts">
-import '../../assets/icon/iconfont.js'
+// onMounted(() => {
+//   // if (typeof window !== 'undefined') {
+//   //   import '../../assets/icon/iconfont.js'
+//   // } else {
+//   //   console.warn('window is undefined')
+//   // }
+//   console.log("111");
+// })
 
 withDefaults(
   defineProps<{
