@@ -36,7 +36,7 @@ export default {
     const {app} = ctx
     app.component("demo", VPDemo)
     DefaultTheme.enhanceApp(ctx)
-    console.log(import.meta.env);
+    // console.log(import.meta.env);
     // const module = await import("../../../packages/index")
     // import("../../../packages/assets/icon/iconfont.js")
 
@@ -48,7 +48,8 @@ export default {
     // @ts-ignore
     // import 'seehar-design-vue/lib/style.css'
     import("seehar-design-vue/lib/style.css")
-    import("seehar-design-vue/packages/assets/icon/iconfont.js")
+    import('../vitepress/icon/iconfont.js')
+    // import("seehar-design-vue/packages/assets/icon/iconfont.js")
     app.use(module.default)
 
     // if (import.meta.env.MODE === "development") {
