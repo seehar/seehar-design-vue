@@ -9,11 +9,11 @@
     <div class="space-x-2">
       <h1 class="dark:text-white/80">按钮</h1>
       <sh-button>default</sh-button>
-      <sh-button type="primary">primary</sh-button>
-      <sh-button type="danger">danger</sh-button>
-      <sh-button type="success">success</sh-button>
-      <sh-button type="warning">warning</sh-button>
-      <sh-button type="info">info</sh-button>
+      <sh-button variant="primary">primary</sh-button>
+      <sh-button variant="danger">danger</sh-button>
+      <sh-button variant="success">success</sh-button>
+      <sh-button variant="warning">warning</sh-button>
+      <sh-button variant="info">info</sh-button>
     </div>
 
     <div class="my-4">

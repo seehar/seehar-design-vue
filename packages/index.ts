@@ -6,12 +6,19 @@
 import { App } from 'vue'
 // import './assets/css/tailwind.css'
 export * from './component'
-import components from './component'
+import { components } from './component'
+import { SeeharUIConfiguration } from './types/variant'
 
-const SeeharDesign = (Vue: App): void => {
-  components.forEach((component) => {
-    component.install(Vue)
-  })
+const install = (Vue: App, configuration: SeeharUIConfiguration): void => {
+  for (const component in components) {
+    components[component].install(Vue)
+  }
+  Vue.config.globalProperties.$Seehar = {
+    drawers: [],
+    modals: []
+  }
+
+  Vue.provide('config', configuration)
 }
 
-export default SeeharDesign
+export default install

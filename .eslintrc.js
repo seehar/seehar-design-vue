@@ -19,12 +19,15 @@ module.exports = {
       jsx: true
     }
   },
+  rules: {
+    "prettier/prettier": ["error", {"endOfLine": "auto"}],
+  },
   extends: [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     // '@vue/eslint-config-typescript',
     // '@vue/eslint-config-prettier/skip-formatting',
+    'plugin:prettier/recommended',
     'plugin:@typescript-eslint/recommended', // typescript-eslint推荐规则,
-    'plugin:prettier/recommended'
   ]
 }
