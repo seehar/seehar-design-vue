@@ -26,11 +26,14 @@
     <div class="text-secondary">文字</div>
     <div class="text-secondary/90">文字</div>
     <div class="text-black/20">文字</div>
+
+    <demo />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useDark, useToggle } from '@vueuse/core'
+import demo from './demo.tsx'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)

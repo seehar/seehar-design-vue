@@ -10,7 +10,13 @@ import AutoImport from 'unplugin-auto-import/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue({ include: [/\.vue$/, /\.md$/] }),
+    vue({
+      include: [/\.vue$/, /\.md$/],
+      script: {
+        propsDestructure: true,
+        defineModel: true
+      }
+    }),
     vueJsx(),
     dts(),
     AutoImport({
