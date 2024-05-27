@@ -1,5 +1,6 @@
 import { Component } from '../model/enum/component'
-import { SHButtonVariant } from './component/component'
+import { SHButtonVariant } from '../components/button/type'
+import { SHCardProps } from '../components/card/type'
 
 export declare type CSSClassKeyValuePair = {
   [key: string]: any
@@ -27,4 +28,5 @@ export interface Variants<P> {
 export interface SeeharUIConfiguration {
   transitions: Record<string, Record<string, string>>
   [Component.SHButton]?: SHButtonVariant
+  [Component.SHCard]?: SHCardProps
 }

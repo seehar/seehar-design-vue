@@ -5,19 +5,20 @@ export default {
 </script>
 
 <script lang="ts" setup>
-import { IComponentWithRootType, SHButtonOptions } from '../../types/component/component'
+import type { IComponentWithRootType } from '../../types/component/component'
 import { useVariants } from '../../hooks/useVariants'
 import { Component } from '../../model/enum/component'
 import { computed } from 'vue'
+import type { SHButtonProps } from './type'
 
-const props = defineProps<SHButtonOptions>()
+const props = defineProps<SHButtonProps>()
 
 const variant = computed(() => {
-  const customProps: IComponentWithRootType<SHButtonOptions> = {
+  const customProps: IComponentWithRootType<SHButtonProps> = {
     ...props,
     variant: props.disabled || props.loading ? [props.variant, 'disabled'] : props.variant
   }
-  return useVariants<SHButtonOptions>(Component.SHButton, customProps)
+  return useVariants<SHButtonProps>(Component.SHButton, customProps)
 })
 </script>
 

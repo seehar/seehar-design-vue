@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-white dark:bg-slate-900 text-center dark:text-white/80">
+  <div class="bg-white dark:bg-slate-900 text-center dark:text-white/80 px-10">
     <h2>Seehar Design Vue</h2>
     <a class="cursor-pointer" @click="toggleDark()">{{ isDark }}</a>
     <hr style="margin: 32px 100px" />
 
     <img alt="seehar_design_vue" src="/favicon.png" title="seehar_design_vue" />
 
-    <div class="space-x-2">
+    <sh-card class="space-x-2 flex">
       <h1 class="dark:text-white/80">按钮</h1>
       <sh-button>default</sh-button>
       <sh-button variant="primary">primary</sh-button>
@@ -14,7 +14,7 @@
       <sh-button variant="success">success</sh-button>
       <sh-button variant="warning">warning</sh-button>
       <sh-button variant="info">info</sh-button>
-    </div>
+    </sh-card>
 
     <div class="my-4">
       <div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500">22</div>

@@ -292,7 +292,7 @@ export default Button
 
 #### 2、组件库导出
 
-添加`component.ts`，导出所有的组件
+添加`component.d.ts`，导出所有的组件
 
 ```typescript
 /**
@@ -331,7 +331,7 @@ export default {
 ├── components/*                   # 组件源码
 │── theme                      		 # 样式及主题文件
 │── utils                      		 # 工具及插件
-│── component.ts                   # 所有的组件都在这里来管理
+│── component.d.ts                   # 所有的组件都在这里来管理
 │── index.ts                       # 导出单个组件或者整个组件库
 ```
 

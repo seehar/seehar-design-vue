@@ -1,3 +1,4 @@
 export enum Component {
-  SHButton = 'ShButton'
+  SHButton = 'ShButton',
+  SHCard = 'ShCard'
 }

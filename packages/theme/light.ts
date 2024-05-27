@@ -89,7 +89,13 @@ const lightTheme: SeeharUIConfiguration = {
         ]
       },
       info: {
-        root: ['bg-gray-400 text-white border-gray-400', 'hover:bg-gray-400/80']
+        root: [
+          'bg-gray-500 shadow-md !shadow-gray-500/40 !border-gray-500 text-white',
+          'active:bg-gray-600 active:!border-gray-600 focus-visible:border-gray-500 hover:bg-gray-400 hover:!border-gray-400'
+        ],
+        outlined:
+          '!text-gray-500 hover:bg-gray-400/10 active:bg-gray-400/20 focus-visible:!shadow-gray-500/40',
+        loading: '!border-r-white'
       },
       disabled: {
         root: [
@@ -98,6 +104,19 @@ const lightTheme: SeeharUIConfiguration = {
         ],
         outlined: '!bg-gray-100',
         loading: '!border-r-slate-300'
+      }
+    }
+  },
+  ShCard: {
+    base: {
+      root: 'bg-white shadow-sm rounded-md border border-gray-200 p-4'
+    },
+    variants: {
+      default: {
+        root: ''
+      },
+      outlined: {
+        root: ''
       }
     }
   },

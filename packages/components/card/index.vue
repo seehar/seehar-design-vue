@@ -4,10 +4,21 @@ export default {
 }
 </script>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { SHCardProps } from './type'
+import { computed } from 'vue'
+import { useVariants } from '../../hooks/useVariants'
+import { Component } from '../../model/enum/component'
+
+const props = defineProps<SHCardProps>()
+
+const variant = computed(() => {
+  return useVariants<SHCardProps>(Component.SHCard, props)
+})
+</script>
 
 <template>
-  <div class="border rounded p-3 dark:border-white/30">
+  <div :class="[variant.root]">
     <slot />
   </div>
 </template>
