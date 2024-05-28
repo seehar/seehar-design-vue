@@ -1,9 +1,3 @@
-<script lang="ts">
-export default {
-  name: 'ShIcon'
-}
-</script>
-
 <script setup lang="ts">
 // onMounted(() => {
 //   // if (typeof window !== 'undefined') {
@@ -13,6 +7,10 @@ export default {
 //   // }
 //   console.log("111");
 // })
+
+defineOptions({
+  name: 'ShIcon'
+})
 
 withDefaults(
   defineProps<{
