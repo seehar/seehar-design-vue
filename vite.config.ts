@@ -32,7 +32,8 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       'seehar-design-vue': fileURLToPath(new URL('./packages/index.ts', import.meta.url))
-    }
+    },
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.json']
   },
   build: {
     outDir: 'lib',

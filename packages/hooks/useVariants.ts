@@ -8,6 +8,7 @@ import {
 import { Component } from '../model/enum/component'
 import { twMerge } from 'tailwind-merge'
 import { IComponentWithRoot, IComponentWithRootType } from '../types/component/component'
+import { inject } from 'vue'
 
 export const selectClasses = (classesObject: CSSClassKeyValuePair): CSSClasses =>
   Object.keys(classesObject).filter((className: string) => !!classesObject[className])

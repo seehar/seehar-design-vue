@@ -25,9 +25,9 @@ const variant = computed(() => {
     :class="[
       variant.root,
       {
-        [variant.outlined]: outlined,
-        [variant.round]: round,
-        [variant.empty]: !$slots.default
+        [variant.outlined as string]: outlined,
+        [variant.round as string]: round,
+        [variant.empty as string]: !$slots.default
       }
     ]"
     :disabled="disabled"

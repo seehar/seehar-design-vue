@@ -2,9 +2,7 @@ import { Component } from '../model/enum/component'
 import { SHButtonVariant } from '../components/button/type'
 import { SHCardProps } from '../components/card/type'
 
-export declare type CSSClassKeyValuePair = {
-  [key: string]: any
-}
+export declare type CSSClassKeyValuePair = Record<string, any>
 export declare type CSSClasses = CSSClass[]
 export declare type CSSClass = CSSClassKeyValuePair | string | CSSClasses | undefined
 

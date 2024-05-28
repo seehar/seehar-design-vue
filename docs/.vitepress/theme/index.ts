@@ -5,9 +5,10 @@
  */
 import DefaultTheme from 'vitepress/theme'
 // import SeeharDesign from '../../../packages/index' // 本地开发
+// import lightTheme from '../../../packages/theme/light'
 // import SeeharDesign from 'seehar-design-vue'
 // import 'seehar-design-vue/lib/style.css'
-import '../vitepress/icon/iconfont.js'
+// import '../vitepress/icon/iconfont.js'
 import '../vitepress/style/tailwind.css'
 
 import { VPDemo } from '../vitepress'
@@ -44,23 +45,23 @@ export default {
     // const module = await import("../../../lib/seehar-design-vue.mjs")
     // import("../../../lib/assets/icon/iconfont.js")
     // app.use(module.default)
+    // app.use(SeeharDesign, lightTheme)
 
-    const module = await import("seehar-design-vue")
+    // const module = await import("seehar-design-vue")
     // @ts-ignore
-    // import 'seehar-design-vue/lib/style.css'
-    import("seehar-design-vue/lib/style.css")
+    // import("seehar-design-vue/lib/style.css")
     // import("seehar-design-vue/packages/assets/icon/iconfont.js")
-    app.use(module.default)
 
-    // if (import.meta.env.MODE === "development") {
-    //   const module = await import("../../../packages/index")
-    //   import("../../../packages/assets/icon/iconfont.js")
-    //   app.use(module.default)
-    // } else {
+    if (import.meta.env.MODE === "development") {
+      const SeeharDesign = await import("../../../packages/index")
+      const lightTheme = await import('../../../packages/theme/light')
+      // @ts-ignore
+      app.use(SeeharDesign.default, lightTheme.default)
+    } else {
     //   const module = await import("seehar-design-vue")
     //   // @ts-ignore
     //   import 'seehar-design-vue/lib/style.css'
     //   app.use(module.default)
-    // }
+    }
   }
 }

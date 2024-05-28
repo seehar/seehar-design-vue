@@ -9,7 +9,7 @@ export * from './component'
 import { components } from './component'
 import { SeeharUIConfiguration } from './types/variant'
 
-const install = (Vue: App, configuration: SeeharUIConfiguration): void => {
+const SeeharDesign = (Vue: App, configuration: SeeharUIConfiguration): void => {
   for (const component in components) {
     components[component].install(Vue)
   }
@@ -21,4 +21,4 @@ const install = (Vue: App, configuration: SeeharUIConfiguration): void => {
   Vue.provide('config', configuration)
 }
 
-export default install
+export default SeeharDesign

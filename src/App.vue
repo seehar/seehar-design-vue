@@ -33,7 +33,7 @@
 
 <script lang="ts" setup>
 import { useDark, useToggle } from '@vueuse/core'
-import demo from './demo.tsx'
+import demo from './demo'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
