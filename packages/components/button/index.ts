@@ -1,6 +1,6 @@
 import { App } from 'vue'
 
-import Button from './index.vue'
+import Button from './button'
 
 const ButtonPlugin: { install(Vue: App): void; name: string } = {
   install(Vue: App) {
@@ -10,9 +10,3 @@ const ButtonPlugin: { install(Vue: App): void; name: string } = {
 }
 
 export default ButtonPlugin
-
-// Button.install = (Vue: App) => {
-//   Vue.component(Button.name, Button)
-// }
-//
-// export default Button

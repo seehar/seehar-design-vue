@@ -1,13 +1,11 @@
 import { CSSClass } from '../variant'
 
-export interface IComponentWithRoot {
+export interface IComponentWithRoot extends Record<string, unknown> {
   root?: string
-  classes?: string | undefined
-  // base?: undefined | Record<string, string | string[]>[]
-  base?: CSSClass
-  // variants?: undefined | Record<string, string | string[]>[]
-  variants?: CSSClass
-  variant?: string
+  // classes?: string | undefined
+  // base?: CSSClass
+  // variants?: CSSClass
+  // variant?: string
 }
 
 export type IComponentWithRootType<T extends IComponentWithRoot> = {

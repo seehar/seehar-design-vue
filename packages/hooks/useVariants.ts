@@ -7,8 +7,9 @@ import {
 } from '../types/variant'
 import { Component } from '../model/enum/component'
 import { twMerge } from 'tailwind-merge'
-import { IComponentWithRoot, IComponentWithRootType } from '../types/component/component'
+import { IComponentWithRoot } from '../types/component/component'
 import { inject } from 'vue'
+import { VariantJSWithClassesListProps } from '../helpers/getVariantProps'
 
 export const selectClasses = (classesObject: CSSClassKeyValuePair): CSSClasses =>
   Object.keys(classesObject).filter((className: string) => !!classesObject[className])
@@ -32,10 +33,10 @@ const mergeClasses = (...classes: CSSClasses): string =>
 
 export const useVariants = <T extends IComponentWithRoot>(
   name: Component,
-  props: IComponentWithRootType<T>
+  props: VariantJSWithClassesListProps<T> = {}
 ): {
   transitions?: Record<string, Record<string, string>>
-} & CSSRawClassesList<IComponentWithRootType<T>> => {
+} & CSSRawClassesList<T> => {
   const config = inject<SeeharUIConfiguration>('config', {} as SeeharUIConfiguration)
   const globalVariant = config && config[name] // FIXME: Not gonna work with nuxt?
 

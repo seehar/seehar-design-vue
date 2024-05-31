@@ -23,6 +23,7 @@ export type VariantJSWithClassesListProps<ClassesKeys> = {
   }
   variant?: {
     type: PropType<string | string[] | undefined>
+    // type: string | undefined | (string | undefined)[]
     default?: string
   }
 }
