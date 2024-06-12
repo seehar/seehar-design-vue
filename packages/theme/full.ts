@@ -9,14 +9,14 @@ const fullTheme: SeeharUIConfiguration = {
       text: 'empty:!hidden flex text-center flex-row space-x-2 items-center',
       round: 'rounded-3xl after:rounded-3xl',
       small: '!px-3.5 !py-1',
-      big: '!px-7 !py-3.5 text-base rounded-md',
+      large: '!px-7 !py-3.5 text-base rounded-md',
       empty: '!p-2',
       loading: 'absolute !w-6 !h-6'
     },
     variants: {
       default: {
         root: [
-          'text-slate-900 shadow-slate-600/10 border-slate-300 bg-white focus-visible:border-slate-400 focus-visible:shadow-slate-200/60 active:bg-gray-100',
+          'text-slate-900 shadow-slate-600/10 border-slate-200 bg-white focus-visible:border-slate-400 focus-visible:shadow-slate-200/60 active:bg-gray-100',
           'dark:bg-zinc-700 dark:shadow-zinc-600/10 dark:text-white dark:border-zinc-600 dark:active:bg-zinc-800 dark:focus-visible:border-zinc-500 dark:focus-visible:shadow-zinc-200/60'
         ]
       },
@@ -105,7 +105,8 @@ const fullTheme: SeeharUIConfiguration = {
           '!shadow-none !cursor-not-allowed !border-gray-300 !text-gray-300 bg-gray-100',
           'active:!border-gray-300 active:!bg-gray-100 peer-checked:!border-gray-300 hover:!border-gray-300'
         ],
-        outlined: '!bg-gray-100',
+        primary: '!hover:bg-red-500',
+        outlined: '!bg-red-100 hover:bg-red-100 active:!bg-red-100',
         loading: '!border-r-slate-300'
       }
     }

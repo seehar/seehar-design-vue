@@ -6,7 +6,7 @@
       <sh-button type="danger" disabled>Danger</sh-button>
       <sh-button type="success" disabled>Success</sh-button>
       <sh-button type="warning" disabled>Warning</sh-button>
-      <sh-button type="info" disabled>Info</sh-button>
+      <sh-button type="info" disabled outlined>Info</sh-button>
     </div>
 
     <div class="space-x-3">
@@ -25,27 +25,6 @@
       <sh-button type="success" round disabled>Success</sh-button>
       <sh-button type="warning" round disabled>Warning</sh-button>
       <sh-button type="info" round disabled>Info</sh-button>
-    </div>
-
-    <div class="space-x-3">
-      <sh-button circle disabled>
-        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
-      </sh-button>
-      <sh-button type="primary" circle disabled>
-        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
-      </sh-button>
-      <sh-button type="danger" circle disabled>
-        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
-      </sh-button>
-      <sh-button type="success" circle disabled>
-        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
-      </sh-button>
-      <sh-button type="warning" circle disabled>
-        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
-      </sh-button>
-      <sh-button type="info" circle disabled>
-        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
-      </sh-button>
     </div>
   </div>
 </template>

@@ -54,9 +54,9 @@ export default {
 
     if (import.meta.env.MODE === "development") {
       const SeeharDesign = await import("../../../packages/index")
-      const lightTheme = await import('../../../packages/theme/light')
+      const fullTheme = await import('../../../packages/theme/full')
       // @ts-ignore
-      app.use(SeeharDesign.default, lightTheme.default)
+      app.use(SeeharDesign.default, fullTheme.default)
     } else {
     //   const module = await import("seehar-design-vue")
     //   // @ts-ignore

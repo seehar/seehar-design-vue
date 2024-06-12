@@ -19,13 +19,13 @@ withDefaults(
 </script>
 
 <template>
-  <div class="bg-white dark:bg-zinc-900 dark:text-white/80 px-10">
+  <div class="bg-white dark:bg-zinc-900 dark:text-white/80 px-10 min-h-screen">
     <div class="text-right py-4">
       <span class="cursor-pointer" @click="toggleDark()">{{ isDark ? '黑暗' : '明亮' }}</span>
     </div>
 
     <div class="flex justify-center items-center py-4">
-      <img alt="seehar_design_vue" src="/favicon.png" title="seehar_design_vue" class="w-12" />
+      <img alt="favicon" src="/favicon.png" title="favicon" class="w-12" />
       <h2 class="text-2xl ml-4 font-bold">Seehar Design Vue</h2>
     </div>
 
@@ -34,38 +34,38 @@ withDefaults(
         <h1 class="dark:text-white/80">按钮</h1>
         <div class="space-x-2">
           <sh-button>default</sh-button>
-          <sh-button variant="primary">primary</sh-button>
-          <sh-button variant="danger">danger</sh-button>
-          <sh-button variant="success">success</sh-button>
-          <sh-button variant="warning">warning</sh-button>
-          <sh-button variant="info">info</sh-button>
+          <sh-button type="primary">primary</sh-button>
+          <sh-button type="danger">danger</sh-button>
+          <sh-button type="success">success</sh-button>
+          <sh-button type="warning" size="big">warning</sh-button>
+          <sh-button type="info">info</sh-button>
         </div>
 
         <div class="space-x-2">
           <sh-button disabled>default</sh-button>
-          <sh-button disabled variant="primary">primary</sh-button>
-          <sh-button disabled variant="danger">danger</sh-button>
-          <sh-button disabled variant="success">success</sh-button>
-          <sh-button disabled variant="warning">warning</sh-button>
-          <sh-button disabled variant="info">info</sh-button>
+          <sh-button disabled type="primary">primary</sh-button>
+          <sh-button disabled type="danger">danger</sh-button>
+          <sh-button disabled type="success">success</sh-button>
+          <sh-button disabled type="warning">warning</sh-button>
+          <sh-button disabled type="info">info</sh-button>
         </div>
 
         <div class="space-x-2">
           <sh-button outlined>default</sh-button>
-          <sh-button outlined variant="primary">primary</sh-button>
-          <sh-button outlined variant="danger">danger</sh-button>
-          <sh-button outlined variant="success">success</sh-button>
-          <sh-button outlined variant="warning">warning</sh-button>
-          <sh-button outlined variant="info">info</sh-button>
+          <sh-button outlined type="primary">primary</sh-button>
+          <sh-button outlined type="danger">danger</sh-button>
+          <sh-button outlined type="success">success</sh-button>
+          <sh-button outlined type="warning">warning</sh-button>
+          <sh-button outlined type="info">info</sh-button>
         </div>
 
         <div class="space-x-2">
-          <sh-button variant="text">default</sh-button>
-          <sh-button variant="primary-text">primary</sh-button>
-          <sh-button variant="danger-text">danger</sh-button>
-          <sh-button variant="success-text">success</sh-button>
-          <sh-button variant="warning-text">warning</sh-button>
-          <sh-button variant="info-text">info</sh-button>
+          <sh-button type="text">default</sh-button>
+          <sh-button type="primary-text">primary</sh-button>
+          <sh-button type="danger-text">danger</sh-button>
+          <sh-button type="success-text">success</sh-button>
+          <sh-button type="warning-text">warning</sh-button>
+          <sh-button type="info-text">info</sh-button>
         </div>
       </sh-card>
     </div>

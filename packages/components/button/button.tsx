@@ -13,7 +13,7 @@ export default defineComponent({
   props: {
     ...getVariantPropsWithClassesList<SHButtonProps>(),
     size: {
-      type: String,
+      type: String as () => 'large' | 'normal' | 'small',
       default: Size.NORMAL,
       validator: (value: Size) => Object.values(Size).includes(value)
     },
@@ -24,30 +24,45 @@ export default defineComponent({
     pulse: { type: Boolean },
     loading: { type: Boolean },
     nuxt: { type: Boolean },
-    routerLink: { type: Boolean }
+    routerLink: { type: Boolean },
+    type: {
+      type: String as () =>
+        | 'primary'
+        | 'primary-text'
+        | 'danger'
+        | 'danger-text'
+        | 'success'
+        | 'success-text'
+        | 'warning'
+        | 'warning-text'
+        | 'info'
+        | 'info-text'
+        | 'text'
+    }
   },
 
   setup(props, { slots }) {
     const variant = computed(() => {
       const customProps: VariantJSWithClassesListProps<SHButtonProps> = {
         ...props,
-        variant: props.disabled || props.loading ? 'disabled' : props.variant
+        variant: props.disabled || props.loading ? ([props.type, 'disabled'] as any) : props.type
       }
       return useVariants<SHButtonProps>(Component.SHButton, customProps)
     })
     return () => (
-      <button
+      <div
         class={[
           variant.value.root,
           {
             [variant.value.outlined as string]: props.outlined,
             [variant.value.round as string]: props.round,
-            [variant.value.empty as string]: !slots.default
+            [variant.value.empty as string]: !slots.default,
+            [variant.value.disabled as string]: !slots.default
           }
         ]}
       >
         {slots.default ? slots.default() : ''}
-      </button>
+      </div>
     )
   }
 })

@@ -64,7 +64,7 @@ const copyRawSource = async () => {
   }
 
   &__panel {
-    margin: 16px 0;
+    @apply mb-2 mt-4;
     border: 1px solid var(--border-color);
     background-color: var(--bg-color);
     border-radius: 8px;
@@ -72,9 +72,8 @@ const copyRawSource = async () => {
   }
 
   &__control {
-    height: 44px;
     box-sizing: border-box;
-    padding: 0 1.5rem;
+    padding: 0.5rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -83,10 +82,9 @@ const copyRawSource = async () => {
 
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    margin-top: -1px;
 
     &-btn {
-      font-size: 14px;
+      font-size: 13px;
       margin-left: 10px;
       cursor: pointer;
       color: #5e6d82;
