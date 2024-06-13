@@ -37,8 +37,17 @@ withDefaults(
           <sh-button type="primary">primary</sh-button>
           <sh-button type="danger">danger</sh-button>
           <sh-button type="success">success</sh-button>
-          <sh-button type="warning" size="big">warning</sh-button>
+          <sh-button type="warning" size="large">warning</sh-button>
           <sh-button type="info">info</sh-button>
+        </div>
+
+        <div class="space-x-2">
+          <sh-button>default</sh-button>
+          <sh-button round type="primary">primary</sh-button>
+          <sh-button round type="danger">danger</sh-button>
+          <sh-button round type="success">success</sh-button>
+          <sh-button round type="warning" size="large">warning</sh-button>
+          <sh-button round type="info">info</sh-button>
         </div>
 
         <div class="space-x-2">

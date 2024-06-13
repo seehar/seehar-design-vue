@@ -55,10 +55,11 @@ export const useVariants = <T extends IComponentWithRoot>(
       const variant = props.variant || 'default'
       result.push(
         Array.isArray(variant)
-          ? variant.map(
-              (el) =>
-                // @ts-ignore
-                props.variants?.[el]?.[key] || globalVariant?.variants?.[el]?.[key]
+          ? variant.map((el) =>
+              // @ts-ignore
+              {
+                return props.variants?.[el]?.[key] || globalVariant?.variants?.[el]?.[key]
+              }
             )
           : // @ts-ignore
             props.variants?.[variant]?.[key] ||

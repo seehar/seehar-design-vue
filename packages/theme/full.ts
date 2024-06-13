@@ -11,7 +11,8 @@ const fullTheme: SeeharUIConfiguration = {
       small: '!px-3.5 !py-1',
       large: '!px-7 !py-3.5 text-base rounded-md',
       empty: '!p-2',
-      loading: 'absolute !w-6 !h-6'
+      loading: 'absolute !w-6 !h-6',
+      disabled: ''
     },
     variants: {
       default: {
@@ -22,12 +23,14 @@ const fullTheme: SeeharUIConfiguration = {
       },
       primary: {
         root: [
-          'bg-blue-600 shadow-md !shadow-blue-600/40 border-blue-600 text-white',
+          'bg-blue-600 shadow-md shadow-blue-600/40 border-blue-600 text-white',
           'active:bg-blue-700 active:!border-blue-700 focus-visible:border-blue-600 hover:bg-blue-500 hover:!border-blue-500'
         ],
         outlined:
           '!text-blue-600 hover:bg-blue-400/10 active:bg-blue-400/20 focus-visible:shadow-blue-600/40',
-        loading: '!border-r-white'
+        loading: '!border-r-white',
+        disabled:
+          '!bg-blue-700 !border-blue-700 active:!bg-blue-700 active:!border-blue-700 hover:!border-blue-700 hover:!bg-blue-700'
       },
       'primary-text': {
         root: [
@@ -50,7 +53,9 @@ const fullTheme: SeeharUIConfiguration = {
         ],
         outlined:
           '!text-green-500 hover:bg-green-400/10 active:bg-green-400/20 focus-visible:!shadow-green-500/40',
-        loading: '!border-r-white'
+        loading: '!border-r-white',
+        disabled:
+          '!bg-green-700 !border-green-700 active:!bg-green-700 active:!border-green-700 hover:!border-green-700 hover:!bg-green-700'
       },
       'success-text': {
         root: [
@@ -66,7 +71,9 @@ const fullTheme: SeeharUIConfiguration = {
         ],
         outlined:
           '!text-yellow-500 hover:bg-yellow-400/10 active:bg-yellow-400/20 focus-visible:!shadow-yellow-500/40',
-        loading: '!border-r-white'
+        loading: '!border-r-white',
+        disabled:
+          '!bg-yellow-700 !border-yellow-700 active:!bg-yellow-700 active:!border-yellow-700 hover:!border-yellow-700 hover:!bg-yellow-700'
       },
       'warning-text': {
         root: [
@@ -82,7 +89,9 @@ const fullTheme: SeeharUIConfiguration = {
         ],
         outlined:
           '!text-red-500 hover:bg-red-400/10 active:bg-red-400/20 focus-visible:!shadow-red-500/40',
-        loading: '!border-r-white'
+        loading: '!border-r-white',
+        disabled:
+          '!bg-red-700 !border-red-700 active:!bg-red-700 active:!border-red-700 hover:!border-red-700 hover:!bg-red-700'
       },
       'danger-text': {
         root: [
@@ -98,14 +107,19 @@ const fullTheme: SeeharUIConfiguration = {
         ],
         outlined:
           '!text-gray-500 hover:bg-gray-400/10 active:bg-gray-400/20 focus-visible:!shadow-gray-500/40',
-        loading: '!border-r-white'
+        loading: '!border-r-white',
+        disabled:
+          '!bg-gray-700 !border-gray-700 active:!bg-gray-700 active:!border-gray-700 hover:!border-gray-700 hover:!bg-gray-700'
+      },
+      'info-text': {
+        root: [
+          '!bg-transparent !shadow-gray-500/40 text-gray-500 dark:text-gray-300 !border-none',
+          'active:!bg-gray-400/20 hover:!border-none focus-visible:border-none',
+          "after:content-[''] after:rounded after:absolute after:inset-0 after:bg-gray-400/10 after:scale-50 after:opacity-0 hover:after:scale-100 hover:after:opacity-100 after:transition-all after:ease-in-out after:duration-200"
+        ]
       },
       disabled: {
-        root: [
-          '!shadow-none !cursor-not-allowed !border-gray-300 !text-gray-300 bg-gray-100',
-          'active:!border-gray-300 active:!bg-gray-100 peer-checked:!border-gray-300 hover:!border-gray-300'
-        ],
-        primary: '!hover:bg-red-500',
+        root: ['!shadow-none !cursor-not-allowed !text-gray-300 border-zinc-700'],
         outlined: '!bg-red-100 hover:bg-red-100 active:!bg-red-100',
         loading: '!border-r-slate-300'
       }
