@@ -19,7 +19,8 @@ const fullTheme: SeeharUIConfiguration = {
         root: [
           'text-slate-900 shadow-slate-600/10 border-slate-200 bg-white focus-visible:border-slate-400 focus-visible:shadow-slate-200/60 active:bg-gray-100',
           'dark:bg-zinc-700 dark:shadow-zinc-600/10 dark:text-white dark:border-zinc-600 dark:active:bg-zinc-800 dark:focus-visible:border-zinc-500 dark:focus-visible:shadow-zinc-200/60'
-        ]
+        ],
+        disabled: 'border-slate-200 dark:border-zinc-600 active:bg-white dark:active:bg-zinc-700'
       },
       primary: {
         root: [
@@ -127,7 +128,8 @@ const fullTheme: SeeharUIConfiguration = {
   },
   ShCard: {
     base: {
-      root: 'bg-white shadow-sm rounded-md border border-gray-200 p-4 dark:bg-zinc-800 dark:border-zinc-700'
+      root: 'bg-white shadow-sm rounded-md border border-gray-200 p-4 dark:bg-zinc-800 dark:border-zinc-700',
+      shadow: 'shadow-md shadow-gray-200 dark:shadow-zinc-700'
     },
     variants: {
       default: {
