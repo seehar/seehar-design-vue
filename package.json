@@ -87,6 +87,7 @@
     "eslint-define-config": "^1.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^9.1.0",
+    "heroicons": "^2.1.4",
     "husky": "^8.0.1",
     "less": "^4.2.0",
     "postcss": "^8.4.27",

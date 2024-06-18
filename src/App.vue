@@ -3,6 +3,7 @@ import { useDark, useToggle } from '@vueuse/core'
 import demo from './demo'
 import ShButton from '../packages/components/button/button'
 import ShCard from '../packages/components/card/card'
+import * as solid from '@heroicons/vue/24/solid'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
@@ -30,7 +31,7 @@ withDefaults(
       <h2 class="text-2xl ml-4 font-bold">Seehar Design Vue</h2>
     </div>
 
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-2 gap-4">
       <sh-card class="space-y-3" :shadow="true" title="按钮">
         <!--        <h1 class="dark:text-white/80">按钮</h1>-->
         <div class="space-x-3">
@@ -76,6 +77,14 @@ withDefaults(
           <sh-button type="success-text">success</sh-button>
           <sh-button type="warning-text">warning</sh-button>
           <sh-button type="info-text">info</sh-button>
+        </div>
+      </sh-card>
+
+      <sh-card title="icon">
+        <div class="flex flex-wrap space-y-1 space-x-1">
+          <template v-for="iconKey in solid" :key="iconKey">
+            <component :is="iconKey" class="w-10 h-10" />
+          </template>
         </div>
       </sh-card>
     </div>

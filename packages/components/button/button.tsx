@@ -7,8 +7,7 @@ import {
   VariantJSWithClassesListProps
 } from '../../helpers/getVariantProps'
 import { Size } from '../../model/enum/size'
-import { CSSClasses, CSSClassKeyValuePair } from '../../types/variant'
-import { twMerge } from 'tailwind-merge'
+import { classMerge } from '../../utils/classUtil'
 
 export default defineComponent({
   name: Component.SHButton,
@@ -64,19 +63,7 @@ export default defineComponent({
           [variant.value.disabled as string]: props.disabled
         }
       ]
-      let result = ''
-      currentClass.forEach((classItem) => {
-        if (typeof classItem === 'string') {
-          result += ' ' + classItem
-        } else {
-          for (const classItemKey in classItem) {
-            if (classItem?.[classItemKey as keyof (CSSClassKeyValuePair | CSSClasses)]) {
-              result += ' ' + classItemKey
-            }
-          }
-        }
-      })
-      return twMerge(result)
+      return classMerge(currentClass)
     })
     return () => (
       <button class={componentClasses.value}>{slots.default ? slots.default() : ''}</button>

@@ -72,6 +72,9 @@ devDependencies:
   eslint-plugin-vue:
     specifier: ^9.1.0
     version: 9.17.0(eslint@8.48.0)
+  heroicons:
+    specifier: ^2.1.4
+    version: 2.1.4
   husky:
     specifier: ^8.0.1
     version: 8.0.3
@@ -3175,6 +3178,10 @@ packages:
   /he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+    dev: true
+
+  /heroicons@2.1.4:
+    resolution: {integrity: sha512-427upVrmqpVzupO1ZSRyVpn2UtWRDzfgIXJm8LMDkswKERjWWyNa94fp1OlDcUR9ULsMp93OB0p08+WOJXUNEA==}
     dev: true
 
   /homedir-polyfill@1.0.3:

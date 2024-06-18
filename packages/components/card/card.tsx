@@ -3,8 +3,7 @@ import { SHCardProps } from './type'
 import { useVariants } from '../../hooks/useVariants'
 import { Component } from '../../model/enum/component'
 import { getVariantPropsWithClassesList } from '../../helpers/getVariantProps'
-import { CSSClasses, CSSClassKeyValuePair } from '../../types/variant'
-import { twMerge } from 'tailwind-merge'
+import { classMerge } from '../../utils/classUtil'
 
 export default defineComponent({
   name: Component.SHCard,
@@ -31,25 +30,15 @@ export default defineComponent({
           [variant.value.shadow as string]: props.shadow
         }
       ]
-      let result = ''
-      currentClass.forEach((classItem) => {
-        if (typeof classItem === 'string') {
-          result += ' ' + classItem
-        } else {
-          for (const classItemKey in classItem) {
-            if (classItem?.[classItemKey as keyof (CSSClassKeyValuePair | CSSClasses)]) {
-              result += ' ' + classItemKey
-            }
-          }
-        }
-      })
-      return twMerge(result)
+      return classMerge(currentClass)
     })
     return () => (
       <div class={componentClasses.value}>
-        <div v-if={props.title} class="dark:text-white/80 font-bold text-black/80">
-          {props.title}
-        </div>{' '}
+        {props.title ? (
+          <div class="dark:text-white/80 font-bold text-black/80">{props.title}</div>
+        ) : (
+          ''
+        )}
         {slots.default ? slots.default() : ''}
       </div>
     )
