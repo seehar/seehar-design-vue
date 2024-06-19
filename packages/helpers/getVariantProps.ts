@@ -28,6 +28,13 @@ export type VariantJSWithClassesListProps<ClassesKeys> = {
   }
 }
 
+export type VariantJSWithClassesUseVariants<ClassesKeys> = {
+  classes?: CSSRawClassesList<ClassesKeys>
+  base?: CSSRawClassesList<ClassesKeys>
+  variants?: Record<string, Record<string, string>>
+  variant?: string | string[] | undefined
+}
+
 declare type ObjectWithClassesList = {
   classesList?: CSSClassesList
 }

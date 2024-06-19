@@ -9,7 +9,10 @@ import { Component } from '../model/enum/component'
 import { twMerge } from 'tailwind-merge'
 import { IComponentWithRoot } from '../types/component/component'
 import { inject } from 'vue'
-import { VariantJSWithClassesListProps } from '../helpers/getVariantProps'
+import {
+  VariantJSWithClassesListProps,
+  VariantJSWithClassesUseVariants
+} from '../helpers/getVariantProps'
 
 export const selectClasses = (classesObject: CSSClassKeyValuePair): CSSClasses =>
   Object.keys(classesObject).filter((className: string) => !!classesObject[className])
@@ -37,6 +40,7 @@ export const useVariants = <T extends IComponentWithRoot>(
 ): {
   transitions?: Record<string, Record<string, string>>
 } & CSSRawClassesList<T> => {
+  const currentProps = props as VariantJSWithClassesUseVariants<T>
   const config = inject<SeeharUIConfiguration>('config', {} as SeeharUIConfiguration)
   const globalVariant = config && config[name] // FIXME: Not gonna work with nuxt?
 
@@ -46,29 +50,21 @@ export const useVariants = <T extends IComponentWithRoot>(
 
   if (globalVariant) {
     for (const [key, value] of Object.entries(globalVariant.base || {})) {
-      // @ts-ignore
-      const result = props.base?.[key]
-        ? // @ts-ignore
-          [props.base[key]]
-        : [value]
+      const result = currentProps.base?.[key] ? [currentProps.base[key]] : [value]
 
-      const variant = props.variant || 'default'
+      const variant = currentProps.variant || 'default'
       result.push(
         Array.isArray(variant)
-          ? variant.map((el) =>
-              // @ts-ignore
-              {
-                return props.variants?.[el]?.[key] || globalVariant?.variants?.[el]?.[key]
+          ? variant.map((el) => {
+              if (el === undefined) {
+                return []
               }
-            )
-          : // @ts-ignore
-            props.variants?.[variant]?.[key] ||
-              // @ts-ignore
-              globalVariant?.variants?.[variant]?.[key]
+              return currentProps.variants?.[el]?.[key] || globalVariant?.variants?.[el]?.[key]
+            })
+          : currentProps.variants?.[variant]?.[key] || globalVariant?.variants?.[variant]?.[key]
       )
 
-      // @ts-ignore
-      finalResult[key as keyof T] = result.filter((el) => !!el)
+      finalResult[key] = result.filter((el) => !!el)
     }
   }
 

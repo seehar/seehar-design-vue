@@ -4,7 +4,7 @@ export interface IComponentWithRoot extends Record<string, unknown> {
   root?: string
   // classes?: string | undefined
   // base?: CSSClass
-  // variants?: CSSClass
+  variants?: Record<string, Record<string, string[]>>
   // variant?: string
 }
 
