@@ -2,7 +2,7 @@
   "name": "seehar-design-vue",
   "private": false,
   "packageManager": "pnpm@7.6.0",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "seehar",
   "description": "Seehar Design Vue - A Vue.js 3 UI library",
   "license": "ISC",
