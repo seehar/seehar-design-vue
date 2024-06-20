@@ -1,19 +1,10 @@
 <script setup lang="ts">
-import { useDark } from '@vueuse/core'
-import { computed } from 'vue'
-
-const isDark = useDark({
-  storageKey: 'vitepress-theme-appearance'
-})
-
-const currentColor = computed(() => {
-  return isDark.value ? '#fff' : ''
-})
+import { UserIcon, UserCircleIcon } from "@heroicons/vue/24/solid"
 </script>
 
 <template>
-  <div class="space-x-3">
-    <sh-icon name="mine" class="text-white" size="1rem" :color="currentColor" />
-    <sh-icon name="mine" class="text-white" size="20" :color="currentColor" />
+  <div class="flex space-x-3">
+    <UserIcon class="w-8" />
+    <UserCircleIcon class="w-8" />
   </div>
 </template>

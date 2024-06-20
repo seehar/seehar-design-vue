@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   arraybuffer-loader:
     specifier: ^1.0.8
@@ -15,7 +11,7 @@ dependencies:
     specifier: ^4.0.1
     version: 4.0.1
   dayjs:
-    specifier: ^1.11.4
+    specifier: ^1.11.5
     version: 1.11.5
   less:
     specifier: ^4.2.0
@@ -34,7 +30,7 @@ dependencies:
     version: 1.28.0
   seehar-design-vue:
     specifier: npm:seehar-design-vue@latest
-    version: 0.0.8(vue@3.4.27)
+    version: 0.0.9(vue@3.4.27)
   vue:
     specifier: ^3.4.27
     version: 3.4.27
@@ -50,7 +46,7 @@ devDependencies:
     specifier: ^3.0.2
     version: 3.0.2(vite@4.4.9)(vue@3.4.27)
   '@vue/shared':
-    specifier: ^3.2.33
+    specifier: ^3.2.37
     version: 3.2.37
   '@vueuse/core':
     specifier: ^9.13.0
@@ -856,8 +852,8 @@ packages:
     dev: true
     optional: true
 
-  /@heroicons/vue@2.1.3(vue@3.4.27):
-    resolution: {integrity: sha512-CP4ipIwFbV4NEn8ULUCN110wkV0wZq6dsViDL3HwgIh+jn5yQGlRm6QaRN+Mv+o+UsUBbRDei3Je/q0NZHf5Gg==}
+  /@heroicons/vue@2.1.4(vue@3.4.27):
+    resolution: {integrity: sha512-wykVSZ/fqEG49lIeHgFGT9TCvBw9THuRTtA/sPp7FVk3iBob/HcmitMcLDwtXOW82TXb38HeLRl1/pcElPeSdg==}
     peerDependencies:
       vue: '>= 3'
     dependencies:
@@ -1653,7 +1649,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.10
-      caniuse-lite: 1.0.30001522
+      caniuse-lite: 1.0.30001636
       fraction.js: 4.2.1
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1731,7 +1727,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001522
+      caniuse-lite: 1.0.30001636
       electron-to-chromium: 1.4.496
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
@@ -1759,8 +1755,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite@1.0.30001522:
-    resolution: {integrity: sha512-TKiyTVZxJGhsTszLuzb+6vUZSjVOAhClszBr2Ta2k9IwtNBT/4dzmL6aywt0HCgEZlmwJzXJd8yNiob6HgwTRg==}
+  /caniuse-lite@1.0.30001636:
+    resolution: {integrity: sha512-bMg2vmr8XBsbL6Lr0UHXy/21m84FTxDLWn2FSqMd5PrlbMxwJlQnC2YWYxVgp66PZE+BBNF2jYQUBKCo1FDeZg==}
     dev: true
 
   /chalk@2.4.2:
@@ -2393,7 +2389,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.11
+      graceful-fs: 4.2.10
     dev: true
 
   /kolorist@1.8.0:
@@ -2982,13 +2978,13 @@ packages:
     engines: {node: '>=8.16.0'}
     dev: true
 
-  /seehar-design-vue@0.0.8(vue@3.4.27):
-    resolution: {integrity: sha512-+JrYlzzpyqCuvhcdGWJBkinppGx1j1mwTVQWZ5/rbSCxiXZxYGeGKPrO2u0D2HuaFWHZidvApLW4ajNxKC4vAw==}
+  /seehar-design-vue@0.0.9(vue@3.4.27):
+    resolution: {integrity: sha512-/h/7NW8U6n0RDg3ac7QCU3A/PRjc/A3sbM0qd+aIK+WdqGsjQ+Tr9lBSAAAtdV6lkjbHueSCUJu39XoLZghQ2Q==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       vue: ^3.2.33
     dependencies:
-      '@heroicons/vue': 2.1.3(vue@3.4.27)
+      '@heroicons/vue': 2.1.4(vue@3.4.27)
       '@rushstack/eslint-patch': 1.10.3
       dayjs: 1.11.5
       vue: 3.4.27
@@ -3538,3 +3534,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

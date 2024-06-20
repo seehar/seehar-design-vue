@@ -53,8 +53,9 @@ export default {
     // import("seehar-design-vue/packages/assets/icon/iconfont.js")
 
     if (import.meta.env.MODE === "development") {
-      const SeeharDesign = await import("../../../packages/index")
-      const fullTheme = await import('../../../packages/theme/full')
+      // const SeeharDesign = await import("../../../packages/index")
+      const SeeharDesign = await import("seehar-design-vue/packages/index")
+      const fullTheme = await import('seehar-design-vue/packages/theme/full')
       // @ts-ignore
       app.use(SeeharDesign.default, fullTheme.default)
     } else {

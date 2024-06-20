@@ -7,7 +7,7 @@ lang: zh-CN
 
 ## 基础用法
 
-::: demo 使用 `type`、`ghost`、`round` 和 `circle` 来定义按钮的样式。
+::: demo 使用 `type`、`ghost` 和 `round` 来定义按钮的样式。
 button/basic
 :::
 
@@ -65,7 +65,6 @@ button/size
 | size     | 尺寸         | `enum` | `default` |
 | color    | 颜色         |        |           |
 | disabled | 	按钮是否为禁用状态 |        |           |
-| circle   | 	是否为圆形按钮   |        |           |
 | round    | 	是否为圆角按钮   |        |           |
 | icon     | 图标组件       |        |           |
 | loading  | 是否为加载中状态   |        |           |

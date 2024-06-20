@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import { UserIcon } from "@heroicons/vue/24/solid"
+</script>
+
 <template>
   <div class="space-y-3">
     <div class="space-x-2">
@@ -13,14 +17,14 @@
     </div>
 
     <div class="space-x-3">
-      <sh-button size="large" circle>
-        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      <sh-button size="large" round>
+        <UserIcon class="w-3" />
       </sh-button>
       <sh-button circle>
-        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+        <UserIcon class="w-3" />
       </sh-button>
-      <sh-button size="small" circle>
-        <sh-icon name="mine" class="text-white" size="1.3rem" color="#fff" />
+      <sh-button size="small" round>
+        <UserIcon class="w-3" />
       </sh-button>
     </div>
   </div>
