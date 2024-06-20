@@ -1,6 +1,4 @@
-import { SeeharUIConfiguration } from '../types/variant'
-
-const fullTheme: SeeharUIConfiguration = {
+const fullTheme = {
   ShButton: {
     base: {
       root: 'py-2 px-5 shadow-sm border max-w-full outline-none relative inline-flex justify-center items-center active:shadow-none font-medium text-sm leading-none cursor-pointer rounded select-none transition-all duration-200 outline-0 font-sans focus-visible:shadow-[0_1px_1px_0,0_0_0_3px]',

@@ -4,11 +4,6 @@
  * @Description: 主题配置
  */
 import DefaultTheme from 'vitepress/theme'
-// import SeeharDesign from '../../../packages/index' // 本地开发
-// import lightTheme from '../../../packages/theme/light'
-// import SeeharDesign from 'seehar-design-vue'
-// import 'seehar-design-vue/lib/style.css'
-// import '../vitepress/icon/iconfont.js'
 import '../vitepress/style/tailwind.css'
 
 import { VPDemo } from '../vitepress'
@@ -38,31 +33,14 @@ export default {
     const {app} = ctx
     app.component("demo", VPDemo)
     DefaultTheme.enhanceApp(ctx)
-    // console.log(import.meta.env);
-    // const module = await import("../../../packages/index")
-    // import("../../../packages/assets/icon/iconfont.js")
-
-    // const module = await import("../../../lib/seehar-design-vue.mjs")
-    // import("../../../lib/assets/icon/iconfont.js")
-    // app.use(module.default)
-    // app.use(SeeharDesign, lightTheme)
-
-    // const module = await import("seehar-design-vue")
-    // @ts-ignore
-    // import("seehar-design-vue/lib/style.css")
-    // import("seehar-design-vue/packages/assets/icon/iconfont.js")
 
     if (import.meta.env.MODE === "development") {
       // const SeeharDesign = await import("../../../packages/index")
-      const SeeharDesign = await import("seehar-design-vue/packages/index")
-      const fullTheme = await import('seehar-design-vue/packages/theme/full')
-      // @ts-ignore
-      app.use(SeeharDesign.default, fullTheme.default)
+      const SeeharDesign = await import("../../../lib/seehar-design-vue.mjs")
+      app.use(SeeharDesign.default, SeeharDesign.fullTheme)
     } else {
-    //   const module = await import("seehar-design-vue")
-    //   // @ts-ignore
-    //   import 'seehar-design-vue/lib/style.css'
-    //   app.use(module.default)
+      const SeeharDesign = await import("seehar-design-vue")
+      app.use(SeeharDesign.default, SeeharDesign.fullTheme)
     }
   }
 }
