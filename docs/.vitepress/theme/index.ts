@@ -34,9 +34,13 @@ export default {
     app.component("demo", VPDemo)
     DefaultTheme.enhanceApp(ctx)
 
-    const SeeharDesign = await import("seehar-design-vue")
-    const fullTheme = await import("seehar-design-vue/lib/theme/full")
+    const SeeharDesign = await import("../../../packages//index")
+    const fullTheme = await import("../../../packages/theme/full")
     app.use(SeeharDesign.default, fullTheme.default)
+
+    // const SeeharDesign = await import("seehar-design-vue")
+    // const fullTheme = await import("seehar-design-vue/lib/theme/full")
+    // app.use(SeeharDesign.default, fullTheme)
     // if (import.meta.env.MODE === "development") {
     //   // const SeeharDesign = await import("../../../packages/index")
     //   const SeeharDesign = await import("../../../lib/seehar-design-vue.mjs")
