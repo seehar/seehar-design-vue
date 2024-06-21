@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/seehar/seehar-design-vue/compare/v0.0.11...v0.0.12) (2024-06-21)
+
+
+### Features
+
+* 主题打包 ([6ade40b](https://github.com/seehar/seehar-design-vue/commit/6ade40bd03d12ec1a047405bfab004c2aa1249ee))
+
 ### [0.0.11](https://github.com/seehar/seehar-design-vue/compare/v0.0.10...v0.0.11) (2024-06-21)
 
 
