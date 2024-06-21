@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/seehar/seehar-design-vue/compare/v0.0.10...v0.0.11) (2024-06-21)
+
+
+### Features
+
+* 0.0.10 发布 ([10ba2dd](https://github.com/seehar/seehar-design-vue/commit/10ba2dd47d351052168c28d0f533c2f56aae9568))
+
+
+### Bug Fixes
+
+* 修复打包错误 ([7be3fb5](https://github.com/seehar/seehar-design-vue/commit/7be3fb5d1f1c19ad97629b45ae050a42915f66db))
+* fix Unmet peer dependencies ([4b921c1](https://github.com/seehar/seehar-design-vue/commit/4b921c127b053075e6937b249f34ad5d5e2fbf18))
+
 ### [0.0.10](https://github.com/seehar/seehar-design-vue/compare/v0.0.9...v0.0.10) (2024-06-20)
 
 ### [0.0.9](https://github.com/seehar/seehar-design-vue/compare/v0.0.6...v0.0.9) (2024-06-20)
