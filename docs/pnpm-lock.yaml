@@ -36,6 +36,9 @@ devDependencies:
   '@algolia/client-search':
     specifier: ^4.19.1
     version: 4.19.1
+  '@heroicons/vue':
+    specifier: ^2.1.4
+    version: 2.1.4(vue@3.4.27)
   '@unocss/core':
     specifier: ^0.55.2
     version: 0.55.2
@@ -848,6 +851,14 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@heroicons/vue@2.1.4(vue@3.4.27):
+    resolution: {integrity: sha512-wykVSZ/fqEG49lIeHgFGT9TCvBw9THuRTtA/sPp7FVk3iBob/HcmitMcLDwtXOW82TXb38HeLRl1/pcElPeSdg==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.4.27
+    dev: true
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
