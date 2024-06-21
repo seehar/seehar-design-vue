@@ -35,14 +35,17 @@ export default {
     DefaultTheme.enhanceApp(ctx)
 
     const SeeharDesign = await import("seehar-design-vue")
-    app.use(SeeharDesign.default, SeeharDesign.fullTheme)
+    const fullTheme = await import("seehar-design-vue/lib/theme/full")
+    app.use(SeeharDesign.default, fullTheme.default)
     // if (import.meta.env.MODE === "development") {
     //   // const SeeharDesign = await import("../../../packages/index")
     //   const SeeharDesign = await import("../../../lib/seehar-design-vue.mjs")
-    //   app.use(SeeharDesign.default, SeeharDesign.fullTheme)
+    //   const fullTheme = await import("../../../lib/theme/full")
+    //   app.use(SeeharDesign.default, fullTheme.default)
     // } else {
     //   const SeeharDesign = await import("seehar-design-vue")
-    //   app.use(SeeharDesign.default, SeeharDesign.fullTheme)
+    //   const fullTheme = await import("seehar-design-vue/lib/theme/full")
+    //   app.use(SeeharDesign.default, fullTheme.default)
     // }
   }
 }
