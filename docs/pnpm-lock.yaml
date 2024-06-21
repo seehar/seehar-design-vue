@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   arraybuffer-loader:
     specifier: ^1.0.8
@@ -28,6 +32,9 @@ dependencies:
   prismjs:
     specifier: ^1.28.0
     version: 1.28.0
+  seehar-design-vue:
+    specifier: npm:seehar-design-vue@latest
+    version: 0.0.13(vue@3.4.27)
   vue:
     specifier: ^3.4.27
     version: 3.4.27
@@ -36,9 +43,6 @@ devDependencies:
   '@algolia/client-search':
     specifier: ^4.19.1
     version: 4.19.1
-  '@heroicons/vue':
-    specifier: ^2.1.4
-    version: 2.1.4(vue@3.4.27)
   '@unocss/core':
     specifier: ^0.55.2
     version: 0.55.2
@@ -858,7 +862,7 @@ packages:
       vue: '>= 3'
     dependencies:
       vue: 3.4.27
-    dev: true
+    dev: false
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -1051,6 +1055,10 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
     dev: true
+
+  /@rushstack/eslint-patch@1.10.3:
+    resolution: {integrity: sha512-qC/xYId4NMebE6w/V33Fh9gWxLgURiNYgVNObbJl2LZv0GUUItCcCqC5axQSwRaAgaxl2mELq1rMzlswaQ0Zxg==}
+    dev: false
 
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
@@ -2974,6 +2982,18 @@ packages:
     engines: {node: '>=8.16.0'}
     dev: true
 
+  /seehar-design-vue@0.0.13(vue@3.4.27):
+    resolution: {integrity: sha512-QHMypwfYol6DNk4r5vZmyD8CIZwA2CtdkG/RaOWYH3/DssEKdXDP505vhvoeIdR+ST1RxOCwn+7pqbUqE7eDIA==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      vue: ^3.2.33
+    dependencies:
+      '@heroicons/vue': 2.1.4(vue@3.4.27)
+      '@rushstack/eslint-patch': 1.10.3
+      dayjs: 1.11.5
+      vue: 3.4.27
+    dev: false
+
   /semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
@@ -3518,7 +3538,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
